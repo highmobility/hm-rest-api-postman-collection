@@ -19714,7 +19714,7 @@
 							"pm.test(\"Set access token variable\", function () {",
 							"    var jsonData = pm.response.json();",
 							"",
-							"    pm.expect(pm.response.code).to.be.oneOf([201. 200]);",
+							"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
 							"",
 							"    pm.environment.set(\"ACCESS_TOKEN\", jsonData.access_token);",
 							"    pm.environment.set(\"ACCESS_TOKEN_EXPIRY\", new Date(Date.now() + 0.9 * jsonData.expires_in));",
