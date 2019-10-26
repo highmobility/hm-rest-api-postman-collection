@@ -19751,6 +19751,11 @@
 							"key": "code",
 							"value": "{{OAUTH_CODE}}",
 							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text"
 						}
 					]
 				},
