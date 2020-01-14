@@ -19,7 +19,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -40,23 +40,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -201,7 +201,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -295,23 +295,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -417,7 +417,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -543,23 +543,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -633,7 +633,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -791,23 +791,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -849,7 +849,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -879,23 +879,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -1065,7 +1065,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -1191,23 +1191,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -1281,7 +1281,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -1311,23 +1311,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -1503,7 +1503,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -1632,23 +1632,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -1685,7 +1685,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -1811,23 +1811,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -1901,7 +1901,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -1995,23 +1995,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -2117,7 +2117,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -2243,23 +2243,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -2333,7 +2333,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -2395,23 +2395,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -2555,7 +2555,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -2576,23 +2576,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -2737,7 +2737,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -2895,23 +2895,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -2953,7 +2953,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -3111,23 +3111,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -3169,7 +3169,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -3199,23 +3199,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -3385,7 +3385,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -3479,23 +3479,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -3601,7 +3601,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -3727,23 +3727,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -3817,7 +3817,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -3975,23 +3975,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -4039,7 +4039,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -4060,23 +4060,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -4221,7 +4221,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -4347,23 +4347,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -4443,7 +4443,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -4491,23 +4491,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -4625,7 +4625,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -4783,23 +4783,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -4847,7 +4847,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -4922,23 +4922,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -5029,7 +5029,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -5187,23 +5187,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -5251,7 +5251,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -5380,23 +5380,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -5433,7 +5433,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -5527,23 +5527,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -5655,7 +5655,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -5730,23 +5730,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -5837,7 +5837,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -5867,23 +5867,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -6053,7 +6053,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -6211,23 +6211,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -6269,7 +6269,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -6395,23 +6395,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -6485,7 +6485,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -6547,23 +6547,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -6701,7 +6701,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -6763,23 +6763,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -6923,7 +6923,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -6998,23 +6998,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -7105,7 +7105,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -7231,23 +7231,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -7321,7 +7321,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -7479,23 +7479,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -7543,7 +7543,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -7591,23 +7591,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -7725,7 +7725,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -7787,23 +7787,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -7947,7 +7947,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -8022,23 +8022,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -8129,7 +8129,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -8223,23 +8223,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -8351,7 +8351,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -8426,23 +8426,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -8533,7 +8533,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -8627,23 +8627,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -8755,7 +8755,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -8881,23 +8881,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -8971,7 +8971,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -9065,23 +9065,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -9187,7 +9187,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -9301,23 +9301,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -9389,7 +9389,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -9518,23 +9518,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -9571,7 +9571,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -9665,23 +9665,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -9793,7 +9793,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -9922,23 +9922,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -9975,7 +9975,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -10037,23 +10037,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -10191,7 +10191,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -10277,23 +10277,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -10393,7 +10393,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -10441,23 +10441,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -10575,7 +10575,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -10605,23 +10605,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -10797,7 +10797,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -10899,23 +10899,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -10979,7 +10979,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -11073,23 +11073,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -11195,7 +11195,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -11309,23 +11309,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -11391,7 +11391,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -11477,23 +11477,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -11593,7 +11593,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -11722,23 +11722,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -11775,7 +11775,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -11933,23 +11933,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -11997,7 +11997,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -12018,23 +12018,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -12179,7 +12179,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -12241,23 +12241,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -12401,7 +12401,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -12476,23 +12476,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -12583,7 +12583,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -12645,23 +12645,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -12805,7 +12805,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -12853,23 +12853,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -12987,7 +12987,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -13017,23 +13017,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -13209,7 +13209,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -13257,23 +13257,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -13391,7 +13391,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -13485,23 +13485,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -13607,7 +13607,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -13733,23 +13733,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -13823,7 +13823,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -13853,23 +13853,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -14045,7 +14045,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -14093,23 +14093,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -14227,7 +14227,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -14353,23 +14353,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -14449,7 +14449,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -14470,23 +14470,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -14631,7 +14631,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -14661,23 +14661,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -14847,7 +14847,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -14877,23 +14877,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -15063,7 +15063,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Content-Type",
@@ -15189,23 +15189,23 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									},
 									{
 										"key": "Authorization",
-										"value": "{{JWT}}"
+										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -15357,7 +15357,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					},
 					{
 						"key": "Content-Type",
@@ -15387,23 +15387,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"body": {
@@ -15573,7 +15573,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -15621,23 +15621,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -15755,7 +15755,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -15884,23 +15884,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -15937,7 +15937,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -15958,23 +15958,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -16119,7 +16119,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -16167,23 +16167,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -16301,7 +16301,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -16403,23 +16403,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -16483,7 +16483,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					},
 					{
 						"key": "Content-Type",
@@ -16609,23 +16609,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"body": {
@@ -16699,7 +16699,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					},
 					{
 						"key": "Content-Type",
@@ -16825,23 +16825,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"body": {
@@ -16915,7 +16915,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					},
 					{
 						"key": "Content-Type",
@@ -16945,23 +16945,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"body": {
@@ -17131,7 +17131,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -17260,23 +17260,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -17313,7 +17313,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -17442,23 +17442,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -17495,7 +17495,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -17624,23 +17624,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -17677,7 +17677,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -17779,23 +17779,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -17859,7 +17859,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					},
 					{
 						"key": "Content-Type",
@@ -18017,23 +18017,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"body": {
@@ -18075,7 +18075,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -18204,23 +18204,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -18257,7 +18257,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					},
 					{
 						"key": "Content-Type",
@@ -18351,23 +18351,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"body": {
@@ -18473,7 +18473,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -18575,23 +18575,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -18655,7 +18655,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -18730,23 +18730,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -18837,7 +18837,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -18885,23 +18885,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -19019,7 +19019,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -19148,23 +19148,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -19201,7 +19201,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					},
 					{
 						"key": "Content-Type",
@@ -19263,23 +19263,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"body": {
@@ -19417,7 +19417,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -19438,23 +19438,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -19599,7 +19599,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -19728,23 +19728,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -19781,7 +19781,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -19883,23 +19883,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -19963,7 +19963,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -20011,23 +20011,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -20145,7 +20145,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					},
 					{
 						"key": "Content-Type",
@@ -20175,23 +20175,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"body": {
@@ -20361,7 +20361,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					},
 					{
 						"key": "Content-Type",
@@ -20447,23 +20447,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
@@ -20557,7 +20557,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "{{JWT}}"
+						"value": "Bearer {{JWT}}"
 					}
 				],
 				"url": {
@@ -20578,23 +20578,23 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							},
 							{
 								"key": "Authorization",
-								"value": "{{JWT}}"
+								"value": "Bearer {{JWT}}"
 							}
 						],
 						"url": {
