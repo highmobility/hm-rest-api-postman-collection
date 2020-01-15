@@ -15296,7 +15296,7 @@
 							"    pm.expect(pm.response.code).to.be.oneOf([201, 200]);",
 							"",
 							"    pm.environment.set(\"ACCESS_TOKEN\", jsonData.access_token);",
-							"    pm.environment.set(\"ACCESS_TOKEN_EXPIRY\", new Date(Date.now() + 0.9 * jsonData.expires_in));",
+							"    pm.environment.set(\"ACCESS_TOKEN_EXPIRY\", new Date(Date.now() + 900 * jsonData.expires_in));",
 							"",
 							"    pm.environment.set(\"REFRESH_TOKEN\", jsonData.refresh_token);",
 							"});"
@@ -21023,7 +21023,7 @@
 					"        var jsonData = res.json();",
 					"",
 					"        pm.environment.set(\"ACCESS_TOKEN\", jsonData.access_token);",
-					"        pm.environment.set(\"ACCESS_TOKEN_EXPIRY\", new Date(Date.now() + 0.9 *jsonData.expires_in));",
+					"        pm.environment.set(\"ACCESS_TOKEN_EXPIRY\", new Date(Date.now() + 900 *jsonData.expires_in));",
 					"",
 					"        pm.environment.set(\"REFRESH_TOKEN\", jsonData.refresh_token);",
 					"    });",
