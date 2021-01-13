@@ -1,8 +1,8 @@
 {
 	"info": {
 		"_postman_id": "3443ccc5-438f-46e7-b9ce-8a781e4953be",
-		"name": "HM REST Auto API V3",
-		"description": "High Mobility REST Auto API Level 11 specification",
+		"name": "HM REST Auto API V4",
+		"description": "High Mobility REST Auto API Level 12 specification",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
