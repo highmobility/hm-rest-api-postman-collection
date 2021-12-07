@@ -34,26 +34,42 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Charging State",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/charging",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"charging"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"estimatedRange\": {\n        \"timestamp\": \"2021-05-20T14:34:20.442Z\",\n        \"data\": {\n            \"value\": 500,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"batteryLevel\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": 0.5\n        }\n    },\n    \"batteryCurrentAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"batteryCurrentDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltageAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargerVoltageDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargeLimit\": {\n        \"timestamp\": \"2021-12-03T16:22:42.291Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"timeToCompleteCharge\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 60,\n            \"unit\": \"minutes\"\n        }\n    },\n    \"chargingRateKW\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 3.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"chargePortState\": {\n        \"timestamp\": \"2021-12-03T16:22:42.644Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"chargeMode\": {\n        \"timestamp\": \"2021-12-03T16:22:42.959Z\",\n        \"data\": {\n            \"value\": \"timer_based\"\n        }\n    },\n    \"maxChargingCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": 25,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingWindowChosen\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"not_chosen\"\n        }\n    },\n    \"departureTimes\": [\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"inactive\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 11\n                    },\n                    \"minute\": {\n                        \"value\": 51\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"active\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 32\n                    }\n                }\n            }\n        }\n    ],\n    \"reductionTimes\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:45.984Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"start\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 17\n                    },\n                    \"minute\": {\n                        \"value\": 33\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:46.007Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"stop\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 12\n                    },\n                    \"minute\": {\n                        \"value\": 52\n                    }\n                }\n            }\n        }\n    ],\n    \"batteryTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.963Z\",\n        \"data\": {\n            \"value\": 38.4,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"timers\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.366Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_start_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:32:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.376Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_end_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.392Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"departure_date\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        }\n    ],\n    \"pluggedIn\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"plugged_in\"\n        }\n    },\n    \"status\": {\n        \"timestamp\": \"2021-12-03T16:22:41.968Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"chargingRate\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 150,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"batteryCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltage\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"currentType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"alternating_current\"\n        }\n    },\n    \"maxRange\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 555,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"starterBatteryState\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"green\"\n        }\n    },\n    \"smartChargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"scc_is_active\"\n        }\n    },\n    \"batteryLevelAtDeparture\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"preconditioningDepartureStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningImmediateStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningDepartureEnabled\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"preconditioningError\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"not_possible_low\"\n        }\n    },\n    \"batteryCapacity\": {\n        \"timestamp\": \"2021-05-05T20:12:52.600Z\",\n        \"data\": {\n            \"value\": 70,\n            \"unit\": \"kilowatt_hours\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -80,33 +96,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 408,\n \"failureType\": \"vehicle_asleep\",\n \"failureDescription\": \"Vehicle Asleep\"\n}"
-						},
-						{
-							"name": "Charging State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/charging",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"charging"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"estimatedRange\": 432,\n \"batteryLevel\": 0.5,\n \"batteryCurrentAC\": -0.6,\n \"batteryCurrentDC\": -0.6,\n \"chargerVoltageAC\": 400,\n \"chargerVoltageDC\": 400,\n \"chargeLimit\": 0.9,\n \"timeToCompleteCharge\": 60,\n \"chargingRateKW\": 3.5,\n \"chargePortState\": \"open\",\n \"chargeMode\": \"timer_based\",\n \"maxChargingCurrent\": 25,\n \"plugType\": \"type_2\",\n \"chargingWindowChosen\": \"not_chosen\",\n \"departureTimes\": [\n  {\n   \"state\": \"active\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 32\n   }\n  },\n  {\n   \"state\": \"inactive\",\n   \"time\": {\n    \"hour\": 11,\n    \"minute\": 51\n   }\n  }\n ],\n \"reductionTimes\": [\n  {\n   \"start_stop\": \"start\",\n   \"time\": {\n    \"hour\": 17,\n    \"minute\": 33\n   }\n  },\n  {\n   \"start_stop\": \"stop\",\n   \"time\": {\n    \"hour\": 12,\n    \"minute\": 52\n   }\n  }\n ],\n \"batteryTemperature\": 38.4,\n \"timers\": [\n  {\n   \"timer_type\": \"preferred_start_time\",\n   \"date\": \"2017-01-10T16:32:05.000Z\"\n  },\n  {\n   \"timer_type\": \"preferred_end_time\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  },\n  {\n   \"timer_type\": \"departure_date\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  }\n ],\n \"pluggedIn\": \"plugged_in\",\n \"status\": \"charging\"\n}"
 						},
 						{
 							"name": "Error 403",
@@ -225,6 +214,47 @@
 					},
 					"response": [
 						{
+							"name": "Charging state",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"charging\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/charging/start_stop_charging",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"charging",
+										"start_stop_charging"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"estimatedRange\": {\n        \"timestamp\": \"2021-05-20T14:34:20.442Z\",\n        \"data\": {\n            \"value\": 500,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"batteryLevel\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": 0.5\n        }\n    },\n    \"batteryCurrentAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"batteryCurrentDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltageAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargerVoltageDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargeLimit\": {\n        \"timestamp\": \"2021-12-03T16:22:42.291Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"timeToCompleteCharge\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 60,\n            \"unit\": \"minutes\"\n        }\n    },\n    \"chargingRateKW\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 3.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"chargePortState\": {\n        \"timestamp\": \"2021-12-03T16:22:42.644Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"chargeMode\": {\n        \"timestamp\": \"2021-12-03T16:22:42.959Z\",\n        \"data\": {\n            \"value\": \"timer_based\"\n        }\n    },\n    \"maxChargingCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": 25,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingWindowChosen\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"not_chosen\"\n        }\n    },\n    \"departureTimes\": [\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"inactive\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 11\n                    },\n                    \"minute\": {\n                        \"value\": 51\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"active\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 32\n                    }\n                }\n            }\n        }\n    ],\n    \"reductionTimes\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:45.984Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"start\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 17\n                    },\n                    \"minute\": {\n                        \"value\": 33\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:46.007Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"stop\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 12\n                    },\n                    \"minute\": {\n                        \"value\": 52\n                    }\n                }\n            }\n        }\n    ],\n    \"batteryTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.963Z\",\n        \"data\": {\n            \"value\": 38.4,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"timers\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.366Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_start_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:32:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.376Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_end_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.392Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"departure_date\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        }\n    ],\n    \"pluggedIn\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"plugged_in\"\n        }\n    },\n    \"status\": {\n        \"timestamp\": \"2021-12-07T16:32:20.113Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"chargingRate\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 150,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"batteryCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltage\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"currentType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"alternating_current\"\n        }\n    },\n    \"maxRange\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 555,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"starterBatteryState\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"green\"\n        }\n    },\n    \"smartChargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"scc_is_active\"\n        }\n    },\n    \"batteryLevelAtDeparture\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"preconditioningDepartureStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningImmediateStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningDepartureEnabled\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"preconditioningError\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"not_possible_low\"\n        }\n    },\n    \"batteryCapacity\": {\n        \"timestamp\": \"2021-05-05T20:12:52.600Z\",\n        \"data\": {\n            \"value\": 70,\n            \"unit\": \"kilowatt_hours\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "PUT",
@@ -296,22 +326,6 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -372,38 +386,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
-						},
-						{
-							"name": "Charging State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"status\": \"charging\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/charging/start_stop_charging",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"charging",
-										"start_stop_charging"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"estimatedRange\": 432,\n \"batteryLevel\": 0.5,\n \"batteryCurrentAC\": -0.6,\n \"batteryCurrentDC\": -0.6,\n \"chargerVoltageAC\": 400,\n \"chargerVoltageDC\": 400,\n \"chargeLimit\": 0.9,\n \"timeToCompleteCharge\": 60,\n \"chargingRateKW\": 3.5,\n \"chargePortState\": \"open\",\n \"chargeMode\": \"timer_based\",\n \"maxChargingCurrent\": 25,\n \"plugType\": \"type_2\",\n \"chargingWindowChosen\": \"not_chosen\",\n \"departureTimes\": [\n  {\n   \"state\": \"active\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 32\n   }\n  },\n  {\n   \"state\": \"inactive\",\n   \"time\": {\n    \"hour\": 11,\n    \"minute\": 51\n   }\n  }\n ],\n \"reductionTimes\": [\n  {\n   \"start_stop\": \"start\",\n   \"time\": {\n    \"hour\": 17,\n    \"minute\": 33\n   }\n  },\n  {\n   \"start_stop\": \"stop\",\n   \"time\": {\n    \"hour\": 12,\n    \"minute\": 52\n   }\n  }\n ],\n \"batteryTemperature\": 38.4,\n \"timers\": [\n  {\n   \"timer_type\": \"preferred_start_time\",\n   \"date\": \"2017-01-10T16:32:05.000Z\"\n  },\n  {\n   \"timer_type\": \"preferred_end_time\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  },\n  {\n   \"timer_type\": \"departure_date\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  }\n ],\n \"pluggedIn\": \"plugged_in\",\n \"status\": \"charging\"\n}"
 						}
 					]
 				},
@@ -441,6 +423,47 @@
 					},
 					"response": [
 						{
+							"name": "Charging State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"chargeLimit\": 0.9\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/charging/set_charge_limit",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"charging",
+										"set_charge_limit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"estimatedRange\": {\n        \"timestamp\": \"2021-05-20T14:34:20.442Z\",\n        \"data\": {\n            \"value\": 500,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"batteryLevel\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": 0.5\n        }\n    },\n    \"batteryCurrentAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"batteryCurrentDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltageAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargerVoltageDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargeLimit\": {\n        \"timestamp\": \"2021-12-07T16:33:57.859Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"timeToCompleteCharge\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 60,\n            \"unit\": \"minutes\"\n        }\n    },\n    \"chargingRateKW\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 3.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"chargePortState\": {\n        \"timestamp\": \"2021-12-03T16:22:42.644Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"chargeMode\": {\n        \"timestamp\": \"2021-12-03T16:22:42.959Z\",\n        \"data\": {\n            \"value\": \"timer_based\"\n        }\n    },\n    \"maxChargingCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": 25,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingWindowChosen\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"not_chosen\"\n        }\n    },\n    \"departureTimes\": [\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"inactive\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 11\n                    },\n                    \"minute\": {\n                        \"value\": 51\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"active\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 32\n                    }\n                }\n            }\n        }\n    ],\n    \"reductionTimes\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:45.984Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"start\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 17\n                    },\n                    \"minute\": {\n                        \"value\": 33\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:46.007Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"stop\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 12\n                    },\n                    \"minute\": {\n                        \"value\": 52\n                    }\n                }\n            }\n        }\n    ],\n    \"batteryTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.963Z\",\n        \"data\": {\n            \"value\": 38.4,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"timers\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.366Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_start_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:32:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.376Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_end_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.392Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"departure_date\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        }\n    ],\n    \"pluggedIn\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"plugged_in\"\n        }\n    },\n    \"status\": {\n        \"timestamp\": \"2021-12-07T16:32:20.113Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"chargingRate\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 150,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"batteryCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltage\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"currentType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"alternating_current\"\n        }\n    },\n    \"maxRange\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 555,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"starterBatteryState\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"green\"\n        }\n    },\n    \"smartChargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"scc_is_active\"\n        }\n    },\n    \"batteryLevelAtDeparture\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"preconditioningDepartureStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningImmediateStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningDepartureEnabled\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"preconditioningError\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"not_possible_low\"\n        }\n    },\n    \"batteryCapacity\": {\n        \"timestamp\": \"2021-05-05T20:12:52.600Z\",\n        \"data\": {\n            \"value\": 70,\n            \"unit\": \"kilowatt_hours\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 400",
 							"originalRequest": {
 								"method": "PUT",
@@ -505,58 +528,10 @@
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
 						},
 						{
-							"name": "Charging State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"chargeLimit\": 0.9\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/charging/set_charge_limit",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"charging",
-										"set_charge_limit"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"estimatedRange\": 432,\n \"batteryLevel\": 0.5,\n \"batteryCurrentAC\": -0.6,\n \"batteryCurrentDC\": -0.6,\n \"chargerVoltageAC\": 400,\n \"chargerVoltageDC\": 400,\n \"chargeLimit\": 0.9,\n \"timeToCompleteCharge\": 60,\n \"chargingRateKW\": 3.5,\n \"chargePortState\": \"open\",\n \"chargeMode\": \"timer_based\",\n \"maxChargingCurrent\": 25,\n \"plugType\": \"type_2\",\n \"chargingWindowChosen\": \"not_chosen\",\n \"departureTimes\": [\n  {\n   \"state\": \"active\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 32\n   }\n  },\n  {\n   \"state\": \"inactive\",\n   \"time\": {\n    \"hour\": 11,\n    \"minute\": 51\n   }\n  }\n ],\n \"reductionTimes\": [\n  {\n   \"start_stop\": \"start\",\n   \"time\": {\n    \"hour\": 17,\n    \"minute\": 33\n   }\n  },\n  {\n   \"start_stop\": \"stop\",\n   \"time\": {\n    \"hour\": 12,\n    \"minute\": 52\n   }\n  }\n ],\n \"batteryTemperature\": 38.4,\n \"timers\": [\n  {\n   \"timer_type\": \"preferred_start_time\",\n   \"date\": \"2017-01-10T16:32:05.000Z\"\n  },\n  {\n   \"timer_type\": \"preferred_end_time\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  },\n  {\n   \"timer_type\": \"departure_date\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  }\n ],\n \"pluggedIn\": \"plugged_in\",\n \"status\": \"charging\"\n}"
-						},
-						{
 							"name": "Error 404",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -624,7 +599,7 @@
 					]
 				},
 				{
-					"name": "Open or close the charge port of the car.",
+					"name": "Open or close the charge port of the car",
 					"request": {
 						"auth": {
 							"type": "noauth"
@@ -660,7 +635,16 @@
 							"name": "Charging State",
 							"originalRequest": {
 								"method": "PUT",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"chargePortState\": \"open\"\n}"
@@ -681,12 +665,12 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"estimatedRange\": 432,\n \"batteryLevel\": 0.5,\n \"batteryCurrentAC\": -0.6,\n \"batteryCurrentDC\": -0.6,\n \"chargerVoltageAC\": 400,\n \"chargerVoltageDC\": 400,\n \"chargeLimit\": 0.9,\n \"timeToCompleteCharge\": 60,\n \"chargingRateKW\": 3.5,\n \"chargePortState\": \"open\",\n \"chargeMode\": \"timer_based\",\n \"maxChargingCurrent\": 25,\n \"plugType\": \"type_2\",\n \"chargingWindowChosen\": \"not_chosen\",\n \"departureTimes\": [\n  {\n   \"state\": \"active\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 32\n   }\n  },\n  {\n   \"state\": \"inactive\",\n   \"time\": {\n    \"hour\": 11,\n    \"minute\": 51\n   }\n  }\n ],\n \"reductionTimes\": [\n  {\n   \"start_stop\": \"start\",\n   \"time\": {\n    \"hour\": 17,\n    \"minute\": 33\n   }\n  },\n  {\n   \"start_stop\": \"stop\",\n   \"time\": {\n    \"hour\": 12,\n    \"minute\": 52\n   }\n  }\n ],\n \"batteryTemperature\": 38.4,\n \"timers\": [\n  {\n   \"timer_type\": \"preferred_start_time\",\n   \"date\": \"2017-01-10T16:32:05.000Z\"\n  },\n  {\n   \"timer_type\": \"preferred_end_time\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  },\n  {\n   \"timer_type\": \"departure_date\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  }\n ],\n \"pluggedIn\": \"plugged_in\",\n \"status\": \"charging\"\n}"
+							"body": "{\n    \"estimatedRange\": {\n        \"timestamp\": \"2021-05-20T14:34:20.442Z\",\n        \"data\": {\n            \"value\": 500,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"batteryLevel\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": 0.5\n        }\n    },\n    \"batteryCurrentAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"batteryCurrentDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltageAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargerVoltageDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargeLimit\": {\n        \"timestamp\": \"2021-12-07T16:33:57.859Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"timeToCompleteCharge\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 60,\n            \"unit\": \"minutes\"\n        }\n    },\n    \"chargingRateKW\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 3.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"chargePortState\": {\n        \"timestamp\": \"2021-12-07T16:35:18.757Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"chargeMode\": {\n        \"timestamp\": \"2021-12-03T16:22:42.959Z\",\n        \"data\": {\n            \"value\": \"timer_based\"\n        }\n    },\n    \"maxChargingCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": 25,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingWindowChosen\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"not_chosen\"\n        }\n    },\n    \"departureTimes\": [\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"inactive\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 11\n                    },\n                    \"minute\": {\n                        \"value\": 51\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"active\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 32\n                    }\n                }\n            }\n        }\n    ],\n    \"reductionTimes\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:45.984Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"start\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 17\n                    },\n                    \"minute\": {\n                        \"value\": 33\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:46.007Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"stop\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 12\n                    },\n                    \"minute\": {\n                        \"value\": 52\n                    }\n                }\n            }\n        }\n    ],\n    \"batteryTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.963Z\",\n        \"data\": {\n            \"value\": 38.4,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"timers\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.366Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_start_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:32:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.376Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_end_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.392Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"departure_date\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        }\n    ],\n    \"pluggedIn\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"plugged_in\"\n        }\n    },\n    \"status\": {\n        \"timestamp\": \"2021-12-07T16:32:20.113Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"chargingRate\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 150,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"batteryCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltage\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"currentType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"alternating_current\"\n        }\n    },\n    \"maxRange\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 555,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"starterBatteryState\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"green\"\n        }\n    },\n    \"smartChargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"scc_is_active\"\n        }\n    },\n    \"batteryLevelAtDeparture\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"preconditioningDepartureStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningImmediateStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningDepartureEnabled\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"preconditioningError\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"not_possible_low\"\n        }\n    },\n    \"batteryCapacity\": {\n        \"timestamp\": \"2021-05-05T20:12:52.600Z\",\n        \"data\": {\n            \"value\": 70,\n            \"unit\": \"kilowatt_hours\"\n        }\n    },\n    \"brand\": {\n        \"data\": {\n            \"value\": \"emulator\"\n        }\n    },\n    \"vin\": {\n        \"data\": {\n            \"value\": \"1HMDB6635HD6D9991\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 403",
@@ -789,22 +773,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -873,7 +841,7 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Charging state",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
@@ -882,17 +850,42 @@
 										"value": "Bearer {{JWT}}"
 									},
 									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"chargeMode\": \"timer_based\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/charging/set_charge_mode",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"charging",
+										"set_charge_mode"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"estimatedRange\": {\n        \"timestamp\": \"2021-05-20T14:34:20.442Z\",\n        \"data\": {\n            \"value\": 500,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"batteryLevel\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": 0.5\n        }\n    },\n    \"batteryCurrentAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"batteryCurrentDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltageAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargerVoltageDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargeLimit\": {\n        \"timestamp\": \"2021-12-07T16:33:57.859Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"timeToCompleteCharge\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 60,\n            \"unit\": \"minutes\"\n        }\n    },\n    \"chargingRateKW\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 3.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"chargePortState\": {\n        \"timestamp\": \"2021-12-07T16:35:18.757Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"chargeMode\": {\n        \"timestamp\": \"2021-12-07T16:36:46.418Z\",\n        \"data\": {\n            \"value\": \"timer_based\"\n        }\n    },\n    \"maxChargingCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": 25,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingWindowChosen\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"not_chosen\"\n        }\n    },\n    \"departureTimes\": [\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"inactive\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 11\n                    },\n                    \"minute\": {\n                        \"value\": 51\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"active\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 32\n                    }\n                }\n            }\n        }\n    ],\n    \"reductionTimes\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:45.984Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"start\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 17\n                    },\n                    \"minute\": {\n                        \"value\": 33\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:46.007Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"stop\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 12\n                    },\n                    \"minute\": {\n                        \"value\": 52\n                    }\n                }\n            }\n        }\n    ],\n    \"batteryTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.963Z\",\n        \"data\": {\n            \"value\": 38.4,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"timers\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.366Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_start_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:32:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.376Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_end_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.392Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"departure_date\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        }\n    ],\n    \"pluggedIn\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"plugged_in\"\n        }\n    },\n    \"status\": {\n        \"timestamp\": \"2021-12-07T16:32:20.113Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"chargingRate\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 150,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"batteryCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltage\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"currentType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"alternating_current\"\n        }\n    },\n    \"maxRange\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 555,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"starterBatteryState\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"green\"\n        }\n    },\n    \"smartChargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"scc_is_active\"\n        }\n    },\n    \"batteryLevelAtDeparture\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"preconditioningDepartureStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningImmediateStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningDepartureEnabled\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"preconditioningError\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"not_possible_low\"\n        }\n    },\n    \"batteryCapacity\": {\n        \"timestamp\": \"2021-05-05T20:12:52.600Z\",\n        \"data\": {\n            \"value\": 70,\n            \"unit\": \"kilowatt_hours\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -988,38 +981,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
-						},
-						{
-							"name": "Charging State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"chargeMode\": \"timer_based\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/charging/set_charge_mode",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"charging",
-										"set_charge_mode"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"estimatedRange\": 432,\n \"batteryLevel\": 0.5,\n \"batteryCurrentAC\": -0.6,\n \"batteryCurrentDC\": -0.6,\n \"chargerVoltageAC\": 400,\n \"chargerVoltageDC\": 400,\n \"chargeLimit\": 0.9,\n \"timeToCompleteCharge\": 60,\n \"chargingRateKW\": 3.5,\n \"chargePortState\": \"open\",\n \"chargeMode\": \"timer_based\",\n \"maxChargingCurrent\": 25,\n \"plugType\": \"type_2\",\n \"chargingWindowChosen\": \"not_chosen\",\n \"departureTimes\": [\n  {\n   \"state\": \"active\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 32\n   }\n  },\n  {\n   \"state\": \"inactive\",\n   \"time\": {\n    \"hour\": 11,\n    \"minute\": 51\n   }\n  }\n ],\n \"reductionTimes\": [\n  {\n   \"start_stop\": \"start\",\n   \"time\": {\n    \"hour\": 17,\n    \"minute\": 33\n   }\n  },\n  {\n   \"start_stop\": \"stop\",\n   \"time\": {\n    \"hour\": 12,\n    \"minute\": 52\n   }\n  }\n ],\n \"batteryTemperature\": 38.4,\n \"timers\": [\n  {\n   \"timer_type\": \"preferred_start_time\",\n   \"date\": \"2017-01-10T16:32:05.000Z\"\n  },\n  {\n   \"timer_type\": \"preferred_end_time\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  },\n  {\n   \"timer_type\": \"departure_date\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  }\n ],\n \"pluggedIn\": \"plugged_in\",\n \"status\": \"charging\"\n}"
 						},
 						{
 							"name": "Error 400",
@@ -1089,6 +1050,47 @@
 					},
 					"response": [
 						{
+							"name": "Charging State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"timers\": [\n        {\n            \"timer_type\": \"preferred_start_time\",\n            \"date\": \"2017-01-10T16:32:05.000Z\"\n        },\n        {\n            \"timer_type\": \"preferred_end_time\",\n            \"date\": \"2017-01-10T16:36:05.000Z\"\n        },\n        {\n            \"timer_type\": \"departure_date\",\n            \"date\": \"2017-01-10T16:36:05.000Z\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/charging/set_charging_timers",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"charging",
+										"set_charging_timers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"estimatedRange\": {\n        \"timestamp\": \"2021-05-20T14:34:20.442Z\",\n        \"data\": {\n            \"value\": 500,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"batteryLevel\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": 0.5\n        }\n    },\n    \"batteryCurrentAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"batteryCurrentDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltageAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargerVoltageDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargeLimit\": {\n        \"timestamp\": \"2021-12-07T16:33:57.859Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"timeToCompleteCharge\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 60,\n            \"unit\": \"minutes\"\n        }\n    },\n    \"chargingRateKW\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 3.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"chargePortState\": {\n        \"timestamp\": \"2021-12-07T16:35:18.757Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"chargeMode\": {\n        \"timestamp\": \"2021-12-07T16:36:46.418Z\",\n        \"data\": {\n            \"value\": \"timer_based\"\n        }\n    },\n    \"maxChargingCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": 25,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingWindowChosen\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"not_chosen\"\n        }\n    },\n    \"departureTimes\": [\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"inactive\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 11\n                    },\n                    \"minute\": {\n                        \"value\": 51\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"active\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 32\n                    }\n                }\n            }\n        }\n    ],\n    \"reductionTimes\": [\n        {\n            \"timestamp\": \"2021-07-19T14:17:45.984Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"start\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 17\n                    },\n                    \"minute\": {\n                        \"value\": 33\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:46.007Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"stop\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 12\n                    },\n                    \"minute\": {\n                        \"value\": 52\n                    }\n                }\n            }\n        }\n    ],\n    \"batteryTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.963Z\",\n        \"data\": {\n            \"value\": 38.4,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"timers\": [\n        {\n            \"timestamp\": \"2021-12-07T16:38:55.096Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_start_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.376Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_end_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.392Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"departure_date\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        }\n    ],\n    \"pluggedIn\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"plugged_in\"\n        }\n    },\n    \"status\": {\n        \"timestamp\": \"2021-12-07T16:32:20.113Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"chargingRate\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 150,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"batteryCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltage\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"currentType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"alternating_current\"\n        }\n    },\n    \"maxRange\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 555,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"starterBatteryState\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"green\"\n        }\n    },\n    \"smartChargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"scc_is_active\"\n        }\n    },\n    \"batteryLevelAtDeparture\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"preconditioningDepartureStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningImmediateStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningDepartureEnabled\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"preconditioningError\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"not_possible_low\"\n        }\n    },\n    \"batteryCapacity\": {\n        \"timestamp\": \"2021-05-05T20:12:52.600Z\",\n        \"data\": {\n            \"value\": 70,\n            \"unit\": \"kilowatt_hours\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 401",
 							"originalRequest": {
 								"method": "PUT",
@@ -1119,38 +1121,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
-						},
-						{
-							"name": "Charging State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"timers\": [\n        {\n            \"timer_type\": \"preferred_start_time\",\n            \"date\": \"2017-01-10T16:32:05.000Z\"\n        },\n        {\n            \"timer_type\": \"preferred_end_time\",\n            \"date\": \"2017-01-10T16:36:05.000Z\"\n        },\n        {\n            \"timer_type\": \"departure_date\",\n            \"date\": \"2017-01-10T16:36:05.000Z\"\n        }\n    ]\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/charging/set_charging_timers",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"charging",
-										"set_charging_timers"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"estimatedRange\": 432,\n \"batteryLevel\": 0.5,\n \"batteryCurrentAC\": -0.6,\n \"batteryCurrentDC\": -0.6,\n \"chargerVoltageAC\": 400,\n \"chargerVoltageDC\": 400,\n \"chargeLimit\": 0.9,\n \"timeToCompleteCharge\": 60,\n \"chargingRateKW\": 3.5,\n \"chargePortState\": \"open\",\n \"chargeMode\": \"timer_based\",\n \"maxChargingCurrent\": 25,\n \"plugType\": \"type_2\",\n \"chargingWindowChosen\": \"not_chosen\",\n \"departureTimes\": [\n  {\n   \"state\": \"active\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 32\n   }\n  },\n  {\n   \"state\": \"inactive\",\n   \"time\": {\n    \"hour\": 11,\n    \"minute\": 51\n   }\n  }\n ],\n \"reductionTimes\": [\n  {\n   \"start_stop\": \"start\",\n   \"time\": {\n    \"hour\": 17,\n    \"minute\": 33\n   }\n  },\n  {\n   \"start_stop\": \"stop\",\n   \"time\": {\n    \"hour\": 12,\n    \"minute\": 52\n   }\n  }\n ],\n \"batteryTemperature\": 38.4,\n \"timers\": [\n  {\n   \"timer_type\": \"preferred_start_time\",\n   \"date\": \"2017-01-10T16:32:05.000Z\"\n  },\n  {\n   \"timer_type\": \"preferred_end_time\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  },\n  {\n   \"timer_type\": \"departure_date\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  }\n ],\n \"pluggedIn\": \"plugged_in\",\n \"status\": \"charging\"\n}"
 						},
 						{
 							"name": "Error 403",
@@ -1189,22 +1159,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -1305,7 +1259,7 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Charging state",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
@@ -1314,17 +1268,42 @@
 										"value": "Bearer {{JWT}}"
 									},
 									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"reductionTimes\": [\n        {\n            \"startStop\": \"start\",\n            \"time\": {\n                \"hour\": 17,\n                \"minute\": 33\n            }\n        },\n        {\n            \"startStop\": \"stop\",\n            \"time\": {\n                \"hour\": 12,\n                \"minute\": 52\n            }\n        }\n    ]\n}\n"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/charging/set_reduction_of_charging_current_times",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"charging",
+										"set_reduction_of_charging_current_times"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"estimatedRange\": {\n        \"timestamp\": \"2021-05-20T14:34:20.442Z\",\n        \"data\": {\n            \"value\": 500,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"batteryLevel\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": 0.5\n        }\n    },\n    \"batteryCurrentAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.957Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"batteryCurrentDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltageAC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargerVoltageDC\": {\n        \"timestamp\": \"2021-03-02T10:30:39.958Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"chargeLimit\": {\n        \"timestamp\": \"2021-12-07T16:33:57.859Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"timeToCompleteCharge\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 60,\n            \"unit\": \"minutes\"\n        }\n    },\n    \"chargingRateKW\": {\n        \"timestamp\": \"2021-03-02T10:30:39.959Z\",\n        \"data\": {\n            \"value\": 3.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"chargePortState\": {\n        \"timestamp\": \"2021-12-07T16:35:18.757Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"chargeMode\": {\n        \"timestamp\": \"2021-12-07T16:36:46.418Z\",\n        \"data\": {\n            \"value\": \"timer_based\"\n        }\n    },\n    \"maxChargingCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": 25,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingWindowChosen\": {\n        \"timestamp\": \"2021-03-02T10:30:39.961Z\",\n        \"data\": {\n            \"value\": \"not_chosen\"\n        }\n    },\n    \"departureTimes\": [\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"inactive\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 11\n                    },\n                    \"minute\": {\n                        \"value\": 51\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-03-02T10:30:39.962Z\",\n            \"data\": {\n                \"state\": {\n                    \"value\": \"active\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 32\n                    }\n                }\n            }\n        }\n    ],\n    \"reductionTimes\": [\n        {\n            \"timestamp\": \"2021-12-07T16:43:33.196Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"start\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 17\n                    },\n                    \"minute\": {\n                        \"value\": 33\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-07T16:43:33.210Z\",\n            \"data\": {\n                \"startStop\": {\n                    \"value\": \"stop\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 12\n                    },\n                    \"minute\": {\n                        \"value\": 52\n                    }\n                }\n            }\n        }\n    ],\n    \"batteryTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.963Z\",\n        \"data\": {\n            \"value\": 38.4,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"timers\": [\n        {\n            \"timestamp\": \"2021-12-07T16:38:55.096Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_start_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.376Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"preferred_end_time\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:17:39.392Z\",\n            \"data\": {\n                \"timerType\": {\n                    \"value\": \"departure_date\"\n                },\n                \"date\": {\n                    \"value\": \"2017-01-10T16:36:05.000Z\"\n                }\n            }\n        }\n    ],\n    \"pluggedIn\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"plugged_in\"\n        }\n    },\n    \"status\": {\n        \"timestamp\": \"2021-12-07T16:32:20.113Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"chargingRate\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 150,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"batteryCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": -0.6,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"chargerVoltage\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 400,\n            \"unit\": \"volts\"\n        }\n    },\n    \"currentType\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": \"alternating_current\"\n        }\n    },\n    \"maxRange\": {\n        \"timestamp\": \"2021-03-02T10:30:39.965Z\",\n        \"data\": {\n            \"value\": 555,\n            \"unit\": \"kilometers\"\n        }\n    },\n    \"starterBatteryState\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"green\"\n        }\n    },\n    \"smartChargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"scc_is_active\"\n        }\n    },\n    \"batteryLevelAtDeparture\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": 0.9\n        }\n    },\n    \"preconditioningDepartureStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningImmediateStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:39.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"preconditioningDepartureEnabled\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"preconditioningError\": {\n        \"timestamp\": \"2021-03-02T10:30:39.967Z\",\n        \"data\": {\n            \"value\": \"not_possible_low\"\n        }\n    },\n    \"batteryCapacity\": {\n        \"timestamp\": \"2021-05-05T20:12:52.600Z\",\n        \"data\": {\n            \"value\": 70,\n            \"unit\": \"kilowatt_hours\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -1452,38 +1431,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
-						},
-						{
-							"name": "Charging State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"reductionTimes\": [\n        {\n            \"start_stop\": \"start\",\n            \"time\": {\n                \"hour\": 17,\n                \"minute\": 33\n            }\n        },\n        {\n            \"start_stop\": \"stop\",\n            \"time\": {\n                \"hour\": 12,\n                \"minute\": 52\n            }\n        }\n    ]\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/charging/set_reduction_of_charging_current_times",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"charging",
-										"set_reduction_of_charging_current_times"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"estimatedRange\": 432,\n \"batteryLevel\": 0.5,\n \"batteryCurrentAC\": -0.6,\n \"batteryCurrentDC\": -0.6,\n \"chargerVoltageAC\": 400,\n \"chargerVoltageDC\": 400,\n \"chargeLimit\": 0.9,\n \"timeToCompleteCharge\": 60,\n \"chargingRateKW\": 3.5,\n \"chargePortState\": \"open\",\n \"chargeMode\": \"timer_based\",\n \"maxChargingCurrent\": 25,\n \"plugType\": \"type_2\",\n \"chargingWindowChosen\": \"not_chosen\",\n \"departureTimes\": [\n  {\n   \"state\": \"active\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 32\n   }\n  },\n  {\n   \"state\": \"inactive\",\n   \"time\": {\n    \"hour\": 11,\n    \"minute\": 51\n   }\n  }\n ],\n \"reductionTimes\": [\n  {\n   \"start_stop\": \"start\",\n   \"time\": {\n    \"hour\": 17,\n    \"minute\": 33\n   }\n  },\n  {\n   \"start_stop\": \"stop\",\n   \"time\": {\n    \"hour\": 12,\n    \"minute\": 52\n   }\n  }\n ],\n \"batteryTemperature\": 38.4,\n \"timers\": [\n  {\n   \"timer_type\": \"preferred_start_time\",\n   \"date\": \"2017-01-10T16:32:05.000Z\"\n  },\n  {\n   \"timer_type\": \"preferred_end_time\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  },\n  {\n   \"timer_type\": \"departure_date\",\n   \"date\": \"2017-01-10T16:36:05.000Z\"\n  }\n ],\n \"pluggedIn\": \"plugged_in\",\n \"status\": \"charging\"\n}"
 						}
 					]
 				}
