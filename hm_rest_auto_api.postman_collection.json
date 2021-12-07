@@ -1,8 +1,8 @@
 {
 	"info": {
 		"_postman_id": "3443ccc5-438f-46e7-b9ce-8a781e4953be",
-		"name": "HM REST Auto API V4",
-		"description": "High Mobility REST Auto API Level 12 specification",
+		"name": "HM REST Auto API V5",
+		"description": "High Mobility REST Auto API Level 13 specification",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -21058,12 +21058,12 @@
 					"    };",
 					"",
 					"    var payload = {",
-					"      api_version: REST_API_CONFIG.version,",
-					"      app_id: REST_API_CONFIG.app_id,",
+					"      ver: REST_API_CONFIG.version,",
+					"      iss: REST_API_CONFIG.client_serial_number,",
+					"      sub: ACCESS_TOKEN,",
 					"      aud: REST_API_CONFIG.app_uri,",
 					"      iat: Math.round(Date.now() / 1000),",
 					"      jti: uuid(),",
-					"      access_token: ACCESS_TOKEN,",
 					"    };",
 					"",
 					"    var sHeader = JSON.stringify(header);",
