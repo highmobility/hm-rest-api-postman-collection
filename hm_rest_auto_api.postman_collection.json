@@ -3906,26 +3906,42 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Cruise Control State",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/cruise_control",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"cruise_control"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cruiseControl\": {\n        \"timestamp\": \"2021-03-02T10:30:39.974Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"limiter\": {\n        \"timestamp\": \"2021-03-02T10:30:39.974Z\",\n        \"data\": {\n            \"value\": \"higher_speed_requested\"\n        }\n    },\n    \"targetSpeed\": {\n        \"timestamp\": \"2021-03-02T10:30:39.974Z\",\n        \"data\": {\n            \"value\": 61,\n            \"unit\": \"kilometers_per_hour\"\n        }\n    },\n    \"adaptiveCruiseControl\": {\n        \"timestamp\": \"2021-03-02T10:30:39.974Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"accTargetSpeed\": {\n        \"timestamp\": \"2021-03-02T10:30:39.975Z\",\n        \"data\": {\n            \"value\": 67,\n            \"unit\": \"kilometers_per_hour\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -3952,33 +3968,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 408,\n \"failureType\": \"vehicle_asleep\",\n \"failureDescription\": \"Vehicle Asleep\"\n}"
-						},
-						{
-							"name": "Cruise Control State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/cruise_control",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"cruise_control"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"cruiseControl\": \"active\",\n \"limiter\": \"higher_speed_requested\",\n \"targetSpeed\": 61,\n \"adaptiveCruiseControl\": \"inactive\",\n \"accTargetSpeed\": 67\n}"
 						},
 						{
 							"name": "Error 401",
@@ -4082,7 +4071,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"cruiseControl\": \"<string>\",\n    \"targetSpeed\": \"<integer>\"\n}"
+							"raw": "{\n    \"cruiseControl\": \"<string>\",\n    \"targetSpeed\": {\n        \"<string>\": \"<integer>\"\n    }\n}"
 						},
 						"url": {
 							"raw": "{{BASE_URL}}/cruise_control/activate_deactivate_cruise_control",
@@ -4096,6 +4085,47 @@
 						}
 					},
 					"response": [
+						{
+							"name": "Cruise Control State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cruiseControl\": \"active\",\n    \"targetSpeed\": {\n        \"kilometers_per_hour\": 61\n    }\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/cruise_control/activate_deactivate_cruise_control",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"cruise_control",
+										"activate_deactivate_cruise_control"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"cruiseControl\": {\n        \"timestamp\": \"2021-12-08T10:46:31.029Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"limiter\": {\n        \"timestamp\": \"2021-03-02T10:30:39.974Z\",\n        \"data\": {\n            \"value\": \"higher_speed_requested\"\n        }\n    },\n    \"targetSpeed\": {\n        \"timestamp\": \"2021-12-08T10:46:31.038Z\",\n        \"data\": {\n            \"value\": 61,\n            \"unit\": \"kilometers_per_hour\"\n        }\n    },\n    \"adaptiveCruiseControl\": {\n        \"timestamp\": \"2021-03-02T10:30:39.974Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"accTargetSpeed\": {\n        \"timestamp\": \"2021-03-02T10:30:39.975Z\",\n        \"data\": {\n            \"value\": 67,\n            \"unit\": \"kilometers_per_hour\"\n        }\n    }\n}"
+						},
 						{
 							"name": "Error 400",
 							"originalRequest": {
@@ -4161,58 +4191,10 @@
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
 						},
 						{
-							"name": "Cruise Control State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"cruiseControl\": \"active\",\n    \"targetSpeed\": 61\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/cruise_control/activate_deactivate_cruise_control",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"cruise_control",
-										"activate_deactivate_cruise_control"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"cruiseControl\": \"active\",\n \"limiter\": \"higher_speed_requested\",\n \"targetSpeed\": 61,\n \"adaptiveCruiseControl\": \"inactive\",\n \"accTargetSpeed\": 67\n}"
-						},
-						{
 							"name": "Error 404",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
