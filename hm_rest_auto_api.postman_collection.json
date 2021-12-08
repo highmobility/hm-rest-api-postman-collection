@@ -2476,26 +2476,42 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Climate State",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/climate",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"climate"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"insideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 19.1,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"outsideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 12.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"driverTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.061Z\",\n        \"data\": {\n            \"value\": 21.5,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"passengerTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.093Z\",\n        \"data\": {\n            \"value\": 21.7,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacState\": {\n        \"timestamp\": \"2021-07-19T14:19:20.166Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"defoggingState\": {\n        \"timestamp\": \"2021-07-19T14:19:26.721Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingState\": {\n        \"timestamp\": \"2021-07-19T14:19:33.111Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"ionisingState\": {\n        \"timestamp\": \"2021-07-19T14:19:39.607Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingTemperatureSetting\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 21.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacWeekdayStartingTimes\": [\n        {\n            \"timestamp\": \"2021-07-19T14:19:13.215Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"monday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:19:13.238Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"tuesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:19:13.262Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"wednesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:19:13.292Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"thursday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:19:13.317Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"friday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:19:13.339Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"saturday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 18\n                    },\n                    \"minute\": {\n                        \"value\": 30\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:19:13.366Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"sunday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 19\n                    },\n                    \"minute\": {\n                        \"value\": 31\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:19:13.390Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"automatic\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        }\n    ],\n    \"rearTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.120Z\",\n        \"data\": {\n            \"value\": 21.6,\n            \"unit\": \"celsius\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -2603,33 +2619,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
-						},
-						{
-							"name": "Climate State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/climate",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"climate"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"insideTemperature\": 19,\n \"outsideTemperature\": 12,\n \"driverTemperatureSetting\": 21.5,\n \"passengerTemperatureSetting\": 21.5,\n \"hvacState\": \"active\",\n \"defoggingState\": \"inactive\",\n \"defrostingState\": \"inactive\",\n \"ionisingState\": \"inactive\",\n \"defrostingTemperatureSetting\": 21.5,\n \"hvacWeekdayStartingTimes\": [\n  {\n   \"weekday\": \"monday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"tuesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"wednesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"thursday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"friday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"saturday\",\n   \"time\": {\n    \"hour\": 18,\n    \"minute\": 30\n   }\n  },\n  {\n   \"weekday\": \"sunday\",\n   \"time\": {\n    \"hour\": 19,\n    \"minute\": 31\n   }\n  },\n  {\n   \"weekday\": \"automatic\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  }\n ],\n \"rearTemperatureSetting\": 21.5\n}"
 						}
 					]
 				},
@@ -2666,6 +2655,47 @@
 						}
 					},
 					"response": [
+						{
+							"name": "Climate State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"hvacWeekdayStartingTimes\": [\n        {\n            \"weekday\": \"monday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"tuesday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"wednesday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"thursday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"friday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"saturday\",\n            \"time\": {\n                \"hour\": 18,\n                \"minute\": 30\n            }\n        },\n        {\n            \"weekday\": \"sunday\",\n            \"time\": {\n                \"hour\": 19,\n                \"minute\": 31\n            }\n        },\n        {\n            \"weekday\": \"automatic\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/climate/change_starting_times",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"climate",
+										"change_starting_times"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"insideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 19.1,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"outsideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 12.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"driverTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.061Z\",\n        \"data\": {\n            \"value\": 21.5,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"passengerTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.093Z\",\n        \"data\": {\n            \"value\": 21.7,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacState\": {\n        \"timestamp\": \"2021-07-19T14:19:20.166Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"defoggingState\": {\n        \"timestamp\": \"2021-07-19T14:19:26.721Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingState\": {\n        \"timestamp\": \"2021-07-19T14:19:33.111Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"ionisingState\": {\n        \"timestamp\": \"2021-07-19T14:19:39.607Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingTemperatureSetting\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 21.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacWeekdayStartingTimes\": [\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.120Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"monday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.136Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"tuesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.150Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"wednesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.161Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"thursday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.172Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"friday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.182Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"saturday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 18\n                    },\n                    \"minute\": {\n                        \"value\": 30\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.195Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"sunday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 19\n                    },\n                    \"minute\": {\n                        \"value\": 31\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.207Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"automatic\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        }\n    ],\n    \"rearTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.120Z\",\n        \"data\": {\n            \"value\": 21.6,\n            \"unit\": \"celsius\"\n        }\n    }\n}"
+						},
 						{
 							"name": "Error 403",
 							"originalRequest": {
@@ -2763,58 +2793,10 @@
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
 						},
 						{
-							"name": "Climate State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"hvacWeekdayStartingTimes\": [\n        {\n            \"weekday\": \"monday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"tuesday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"wednesday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"thursday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"friday\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        },\n        {\n            \"weekday\": \"saturday\",\n            \"time\": {\n                \"hour\": 18,\n                \"minute\": 30\n            }\n        },\n        {\n            \"weekday\": \"sunday\",\n            \"time\": {\n                \"hour\": 19,\n                \"minute\": 31\n            }\n        },\n        {\n            \"weekday\": \"automatic\",\n            \"time\": {\n                \"hour\": 16,\n                \"minute\": 0\n            }\n        }\n    ]\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/climate/change_starting_times",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"climate",
-										"change_starting_times"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"insideTemperature\": 19,\n \"outsideTemperature\": 12,\n \"driverTemperatureSetting\": 21.5,\n \"passengerTemperatureSetting\": 21.5,\n \"hvacState\": \"active\",\n \"defoggingState\": \"inactive\",\n \"defrostingState\": \"inactive\",\n \"ionisingState\": \"inactive\",\n \"defrostingTemperatureSetting\": 21.5,\n \"hvacWeekdayStartingTimes\": [\n  {\n   \"weekday\": \"monday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"tuesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"wednesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"thursday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"friday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"saturday\",\n   \"time\": {\n    \"hour\": 18,\n    \"minute\": 30\n   }\n  },\n  {\n   \"weekday\": \"sunday\",\n   \"time\": {\n    \"hour\": 19,\n    \"minute\": 31\n   }\n  },\n  {\n   \"weekday\": \"automatic\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  }\n ],\n \"rearTemperatureSetting\": 21.5\n}"
-						},
-						{
 							"name": "Error 404",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -2883,6 +2865,47 @@
 					},
 					"response": [
 						{
+							"name": "Climate State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"hvacState\": \"active\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/climate/start_stop_hvac",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"climate",
+										"start_stop_hvac"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"insideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 19.1,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"outsideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 12.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"driverTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.061Z\",\n        \"data\": {\n            \"value\": 21.5,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"passengerTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.093Z\",\n        \"data\": {\n            \"value\": 21.7,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacState\": {\n        \"timestamp\": \"2021-12-08T10:32:15.583Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"defoggingState\": {\n        \"timestamp\": \"2021-07-19T14:19:26.721Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingState\": {\n        \"timestamp\": \"2021-07-19T14:19:33.111Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"ionisingState\": {\n        \"timestamp\": \"2021-07-19T14:19:39.607Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingTemperatureSetting\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 21.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacWeekdayStartingTimes\": [\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.120Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"monday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.136Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"tuesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.150Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"wednesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.161Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"thursday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.172Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"friday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.182Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"saturday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 18\n                    },\n                    \"minute\": {\n                        \"value\": 30\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.195Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"sunday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 19\n                    },\n                    \"minute\": {\n                        \"value\": 31\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.207Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"automatic\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        }\n    ],\n    \"rearTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.120Z\",\n        \"data\": {\n            \"value\": 21.6,\n            \"unit\": \"celsius\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "PUT",
@@ -2947,38 +2970,6 @@
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
 						},
 						{
-							"name": "Climate State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"hvacState\": \"active\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/climate/start_stop_hvac",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"climate",
-										"start_stop_hvac"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"insideTemperature\": 19,\n \"outsideTemperature\": 12,\n \"driverTemperatureSetting\": 21.5,\n \"passengerTemperatureSetting\": 21.5,\n \"hvacState\": \"active\",\n \"defoggingState\": \"inactive\",\n \"defrostingState\": \"inactive\",\n \"ionisingState\": \"inactive\",\n \"defrostingTemperatureSetting\": 21.5,\n \"hvacWeekdayStartingTimes\": [\n  {\n   \"weekday\": \"monday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"tuesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"wednesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"thursday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"friday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"saturday\",\n   \"time\": {\n    \"hour\": 18,\n    \"minute\": 30\n   }\n  },\n  {\n   \"weekday\": \"sunday\",\n   \"time\": {\n    \"hour\": 19,\n    \"minute\": 31\n   }\n  },\n  {\n   \"weekday\": \"automatic\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  }\n ],\n \"rearTemperatureSetting\": 21.5\n}"
-						},
-						{
 							"name": "Error 401",
 							"originalRequest": {
 								"method": "PUT",
@@ -3015,22 +3006,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -3099,7 +3074,7 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Climate State",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
@@ -3108,17 +3083,42 @@
 										"value": "Bearer {{JWT}}"
 									},
 									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"defoggingState\": \"inactive\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/climate/start_stop_defogging",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"climate",
+										"start_stop_defogging"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"insideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 19.1,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"outsideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 12.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"driverTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.061Z\",\n        \"data\": {\n            \"value\": 21.5,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"passengerTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.093Z\",\n        \"data\": {\n            \"value\": 21.7,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacState\": {\n        \"timestamp\": \"2021-12-08T10:32:15.583Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"defoggingState\": {\n        \"timestamp\": \"2021-12-08T10:33:35.836Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingState\": {\n        \"timestamp\": \"2021-07-19T14:19:33.111Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"ionisingState\": {\n        \"timestamp\": \"2021-07-19T14:19:39.607Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingTemperatureSetting\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 21.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacWeekdayStartingTimes\": [\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.120Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"monday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.136Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"tuesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.150Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"wednesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.161Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"thursday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.172Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"friday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.182Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"saturday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 18\n                    },\n                    \"minute\": {\n                        \"value\": 30\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.195Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"sunday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 19\n                    },\n                    \"minute\": {\n                        \"value\": 31\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.207Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"automatic\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        }\n    ],\n    \"rearTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.120Z\",\n        \"data\": {\n            \"value\": 21.6,\n            \"unit\": \"celsius\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -3182,38 +3182,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
-						},
-						{
-							"name": "Climate State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"defoggingState\": \"inactive\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/climate/start_stop_defogging",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"climate",
-										"start_stop_defogging"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"insideTemperature\": 19,\n \"outsideTemperature\": 12,\n \"driverTemperatureSetting\": 21.5,\n \"passengerTemperatureSetting\": 21.5,\n \"hvacState\": \"active\",\n \"defoggingState\": \"inactive\",\n \"defrostingState\": \"inactive\",\n \"ionisingState\": \"inactive\",\n \"defrostingTemperatureSetting\": 21.5,\n \"hvacWeekdayStartingTimes\": [\n  {\n   \"weekday\": \"monday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"tuesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"wednesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"thursday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"friday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"saturday\",\n   \"time\": {\n    \"hour\": 18,\n    \"minute\": 30\n   }\n  },\n  {\n   \"weekday\": \"sunday\",\n   \"time\": {\n    \"hour\": 19,\n    \"minute\": 31\n   }\n  },\n  {\n   \"weekday\": \"automatic\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  }\n ],\n \"rearTemperatureSetting\": 21.5\n}"
 						},
 						{
 							"name": "Error 401",
@@ -3318,7 +3286,16 @@
 							"name": "Climate State",
 							"originalRequest": {
 								"method": "PUT",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"defrostingState\": \"inactive\"\n}"
@@ -3339,12 +3316,12 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"insideTemperature\": 19,\n \"outsideTemperature\": 12,\n \"driverTemperatureSetting\": 21.5,\n \"passengerTemperatureSetting\": 21.5,\n \"hvacState\": \"active\",\n \"defoggingState\": \"inactive\",\n \"defrostingState\": \"inactive\",\n \"ionisingState\": \"inactive\",\n \"defrostingTemperatureSetting\": 21.5,\n \"hvacWeekdayStartingTimes\": [\n  {\n   \"weekday\": \"monday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"tuesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"wednesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"thursday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"friday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"saturday\",\n   \"time\": {\n    \"hour\": 18,\n    \"minute\": 30\n   }\n  },\n  {\n   \"weekday\": \"sunday\",\n   \"time\": {\n    \"hour\": 19,\n    \"minute\": 31\n   }\n  },\n  {\n   \"weekday\": \"automatic\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  }\n ],\n \"rearTemperatureSetting\": 21.5\n}"
+							"body": "{\n    \"insideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 19.1,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"outsideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 12.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"driverTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.061Z\",\n        \"data\": {\n            \"value\": 21.5,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"passengerTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.093Z\",\n        \"data\": {\n            \"value\": 21.7,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacState\": {\n        \"timestamp\": \"2021-12-08T10:32:15.583Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"defoggingState\": {\n        \"timestamp\": \"2021-12-08T10:33:35.836Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingState\": {\n        \"timestamp\": \"2021-12-08T10:34:30.891Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"ionisingState\": {\n        \"timestamp\": \"2021-07-19T14:19:39.607Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingTemperatureSetting\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 21.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacWeekdayStartingTimes\": [\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.120Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"monday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.136Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"tuesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.150Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"wednesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.161Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"thursday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.172Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"friday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.182Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"saturday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 18\n                    },\n                    \"minute\": {\n                        \"value\": 30\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.195Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"sunday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 19\n                    },\n                    \"minute\": {\n                        \"value\": 31\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.207Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"automatic\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        }\n    ],\n    \"rearTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.120Z\",\n        \"data\": {\n            \"value\": 21.6,\n            \"unit\": \"celsius\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 400",
@@ -3383,22 +3360,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -3531,6 +3492,47 @@
 					},
 					"response": [
 						{
+							"name": "Climate State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"ionisingState\": \"inactive\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/climate/start_stop_ionising",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"climate",
+										"start_stop_ionising"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"insideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 19.1,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"outsideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 12.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"driverTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.061Z\",\n        \"data\": {\n            \"value\": 21.5,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"passengerTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.093Z\",\n        \"data\": {\n            \"value\": 21.7,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacState\": {\n        \"timestamp\": \"2021-12-08T10:32:15.583Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"defoggingState\": {\n        \"timestamp\": \"2021-12-08T10:33:35.836Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingState\": {\n        \"timestamp\": \"2021-12-08T10:34:30.891Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"ionisingState\": {\n        \"timestamp\": \"2021-12-08T10:35:24.242Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingTemperatureSetting\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 21.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacWeekdayStartingTimes\": [\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.120Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"monday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.136Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"tuesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.150Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"wednesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.161Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"thursday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.172Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"friday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.182Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"saturday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 18\n                    },\n                    \"minute\": {\n                        \"value\": 30\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.195Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"sunday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 19\n                    },\n                    \"minute\": {\n                        \"value\": 31\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.207Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"automatic\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        }\n    ],\n    \"rearTemperatureSetting\": {\n        \"timestamp\": \"2021-07-19T14:19:46.120Z\",\n        \"data\": {\n            \"value\": 21.6,\n            \"unit\": \"celsius\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 400",
 							"originalRequest": {
 								"method": "PUT",
@@ -3595,58 +3597,10 @@
 							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
 						},
 						{
-							"name": "Climate State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"ionisingState\": \"inactive\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/climate/start_stop_ionising",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"climate",
-										"start_stop_ionising"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"insideTemperature\": 19,\n \"outsideTemperature\": 12,\n \"driverTemperatureSetting\": 21.5,\n \"passengerTemperatureSetting\": 21.5,\n \"hvacState\": \"active\",\n \"defoggingState\": \"inactive\",\n \"defrostingState\": \"inactive\",\n \"ionisingState\": \"inactive\",\n \"defrostingTemperatureSetting\": 21.5,\n \"hvacWeekdayStartingTimes\": [\n  {\n   \"weekday\": \"monday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"tuesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"wednesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"thursday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"friday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"saturday\",\n   \"time\": {\n    \"hour\": 18,\n    \"minute\": 30\n   }\n  },\n  {\n   \"weekday\": \"sunday\",\n   \"time\": {\n    \"hour\": 19,\n    \"minute\": 31\n   }\n  },\n  {\n   \"weekday\": \"automatic\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  }\n ],\n \"rearTemperatureSetting\": 21.5\n}"
-						},
-						{
 							"name": "Error 404",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -3732,7 +3686,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"driverTemperatureSetting\": \"<float>\",\n    \"passengerTemperatureSetting\": \"<float>\",\n    \"rearTemperatureSetting\": \"<float>\"\n}"
+							"raw": "{\n    \"driverTemperatureSetting\": {\n        \"<string>\": \"<float>\"\n    },\n    \"passengerTemperatureSetting\": {\n        \"<string>\": \"<float>\"\n    },\n    \"rearTemperatureSetting\": {\n        \"<string>\": \"<float>\"\n    }\n}"
 						},
 						"url": {
 							"raw": "{{BASE_URL}}/climate/set_temperature_settings",
@@ -3750,10 +3704,19 @@
 							"name": "Climate State",
 							"originalRequest": {
 								"method": "PUT",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"driverTemperatureSetting\": 21.5,\n    \"passengerTemperatureSetting\": 21.5,\n    \"rearTemperatureSetting\": 21.5\n}"
+									"raw": "{\n    \"driverTemperatureSetting\": {\n        \"celsius\": 21.5\n    },\n    \"passengerTemperatureSetting\": {\n        \"celsius\": 21.5\n    },\n    \"rearTemperatureSetting\": {\n        \"celsius\": 21.5\n    }\n}"
 								},
 								"url": {
 									"raw": "{{BASE_URL}}/climate/set_temperature_settings",
@@ -3771,12 +3734,12 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"insideTemperature\": 19,\n \"outsideTemperature\": 12,\n \"driverTemperatureSetting\": 21.5,\n \"passengerTemperatureSetting\": 21.5,\n \"hvacState\": \"active\",\n \"defoggingState\": \"inactive\",\n \"defrostingState\": \"inactive\",\n \"ionisingState\": \"inactive\",\n \"defrostingTemperatureSetting\": 21.5,\n \"hvacWeekdayStartingTimes\": [\n  {\n   \"weekday\": \"monday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"tuesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"wednesday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"thursday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"friday\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  },\n  {\n   \"weekday\": \"saturday\",\n   \"time\": {\n    \"hour\": 18,\n    \"minute\": 30\n   }\n  },\n  {\n   \"weekday\": \"sunday\",\n   \"time\": {\n    \"hour\": 19,\n    \"minute\": 31\n   }\n  },\n  {\n   \"weekday\": \"automatic\",\n   \"time\": {\n    \"hour\": 16,\n    \"minute\": 0\n   }\n  }\n ],\n \"rearTemperatureSetting\": 21.5\n}"
+							"body": "{\n    \"insideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 19.1,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"outsideTemperature\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 12.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"driverTemperatureSetting\": {\n        \"timestamp\": \"2021-12-08T10:37:40.787Z\",\n        \"data\": {\n            \"value\": 21.5,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"passengerTemperatureSetting\": {\n        \"timestamp\": \"2021-12-08T10:37:40.806Z\",\n        \"data\": {\n            \"value\": 21.5,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacState\": {\n        \"timestamp\": \"2021-12-08T10:32:15.583Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"defoggingState\": {\n        \"timestamp\": \"2021-12-08T10:33:35.836Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingState\": {\n        \"timestamp\": \"2021-12-08T10:34:30.891Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"ionisingState\": {\n        \"timestamp\": \"2021-12-08T10:35:24.242Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"defrostingTemperatureSetting\": {\n        \"timestamp\": \"2021-03-02T10:30:39.970Z\",\n        \"data\": {\n            \"value\": 21.2,\n            \"unit\": \"celsius\"\n        }\n    },\n    \"hvacWeekdayStartingTimes\": [\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.120Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"monday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.136Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"tuesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.150Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"wednesday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.161Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"thursday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.172Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"friday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.182Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"saturday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 18\n                    },\n                    \"minute\": {\n                        \"value\": 30\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.195Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"sunday\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 19\n                    },\n                    \"minute\": {\n                        \"value\": 31\n                    }\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-08T10:30:52.207Z\",\n            \"data\": {\n                \"weekday\": {\n                    \"value\": \"automatic\"\n                },\n                \"time\": {\n                    \"hour\": {\n                        \"value\": 16\n                    },\n                    \"minute\": {\n                        \"value\": 0\n                    }\n                }\n            }\n        }\n    ],\n    \"rearTemperatureSetting\": {\n        \"timestamp\": \"2021-12-08T10:37:40.821Z\",\n        \"data\": {\n            \"value\": 21.5,\n            \"unit\": \"celsius\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 403",
@@ -3879,22 +3842,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
