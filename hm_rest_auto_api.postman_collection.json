@@ -9661,7 +9661,12 @@
 							"name": "Parking Ticket State",
 							"originalRequest": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
 								"url": {
 									"raw": "{{BASE_URL}}/parking_ticket",
 									"host": [
@@ -9677,12 +9682,12 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"status\": \"ended\",\n \"operatorName\": \"Berlin Parking\",\n \"operatorTicketID\": \"64894233\",\n \"ticketStartTime\": \"2017-01-10T19:34:22.000Z\",\n \"ticketEndTime\": \"2019-10-08T11:21:45.000Z\"\n}"
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-07-19T14:12:05.566Z\",\n        \"data\": {\n            \"value\": \"ended\"\n        }\n    },\n    \"operatorName\": {\n        \"timestamp\": \"2021-07-19T14:11:58.974Z\",\n        \"data\": {\n            \"value\": \"Berlin Parking\"\n        }\n    },\n    \"operatorTicketID\": {\n        \"timestamp\": \"2021-07-19T14:11:58.961Z\",\n        \"data\": {\n            \"value\": \"6489AB4233\"\n        }\n    },\n    \"ticketStartTime\": {\n        \"timestamp\": \"2021-07-19T14:11:58.967Z\",\n        \"data\": {\n            \"value\": \"2017-01-10T19:34:22.000Z\"\n        }\n    },\n    \"ticketEndTime\": {\n        \"timestamp\": \"2021-07-19T14:11:58.981Z\",\n        \"data\": {\n            \"value\": \"2019-10-08T11:21:45.000Z\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 401",
@@ -9773,22 +9778,6 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -9849,6 +9838,47 @@
 					},
 					"response": [
 						{
+							"name": "Parking Ticket State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"operatorTicketID\": \"64894233\",\n    \"ticketStartTime\": \"2021-01-10T19:34:22.000Z\",\n    \"operatorName\": \"Berlin Parking\",\n    \"ticketEndTime\": \"2021-10-08T11:21:45.000Z\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/parking_ticket/start_parking",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking_ticket",
+										"start_parking"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-13T12:17:11.295Z\",\n        \"data\": {\n            \"value\": \"started\"\n        }\n    },\n    \"operatorName\": {\n        \"timestamp\": \"2021-12-13T12:17:11.284Z\",\n        \"data\": {\n            \"value\": \"Berlin Parking\"\n        }\n    },\n    \"operatorTicketID\": {\n        \"timestamp\": \"2021-12-13T12:17:11.267Z\",\n        \"data\": {\n            \"value\": \"64894233\"\n        }\n    },\n    \"ticketStartTime\": {\n        \"timestamp\": \"2021-12-13T12:17:11.277Z\",\n        \"data\": {\n            \"value\": \"2021-01-10T19:34:22.000Z\"\n        }\n    },\n    \"ticketEndTime\": {\n        \"timestamp\": \"2021-12-13T12:17:11.288Z\",\n        \"data\": {\n            \"value\": \"2021-10-08T11:21:45.000Z\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 400",
 							"originalRequest": {
 								"method": "PUT",
@@ -9888,22 +9918,6 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -9932,38 +9946,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 408,\n \"failureType\": \"vehicle_asleep\",\n \"failureDescription\": \"Vehicle Asleep\"\n}"
-						},
-						{
-							"name": "Parking Ticket State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"operatorTicketID\": \"64894233\",\n    \"ticketStartTime\": \"2017-01-10T19:34:22.000Z\",\n    \"operatorName\": \"Berlin Parking\",\n    \"ticketEndTime\": \"2019-10-08T11:21:45.000Z\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/parking_ticket/start_parking",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"parking_ticket",
-										"start_parking"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"ended\",\n \"operatorName\": \"Berlin Parking\",\n \"operatorTicketID\": \"64894233\",\n \"ticketStartTime\": \"2017-01-10T19:34:22.000Z\",\n \"ticketEndTime\": \"2019-10-08T11:21:45.000Z\"\n}"
 						},
 						{
 							"name": "Error 403",
@@ -10065,6 +10047,47 @@
 					},
 					"response": [
 						{
+							"name": "Parking Ticket State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/parking_ticket/end_parking",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"parking_ticket",
+										"end_parking"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-13T12:18:10.462Z\",\n        \"data\": {\n            \"value\": \"ended\"\n        }\n    },\n    \"operatorName\": {\n        \"timestamp\": \"2021-12-13T12:17:11.284Z\",\n        \"data\": {\n            \"value\": \"Berlin Parking\"\n        }\n    },\n    \"operatorTicketID\": {\n        \"timestamp\": \"2021-12-13T12:17:11.267Z\",\n        \"data\": {\n            \"value\": \"64894233\"\n        }\n    },\n    \"ticketStartTime\": {\n        \"timestamp\": \"2021-12-13T12:17:11.277Z\",\n        \"data\": {\n            \"value\": \"2021-01-10T19:34:22.000Z\"\n        }\n    },\n    \"ticketEndTime\": {\n        \"timestamp\": \"2021-12-13T12:17:11.288Z\",\n        \"data\": {\n            \"value\": \"2021-10-08T11:21:45.000Z\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 400",
 							"originalRequest": {
 								"method": "PUT",
@@ -10093,54 +10116,10 @@
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
 						},
 						{
-							"name": "Parking Ticket State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/parking_ticket/end_parking",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"parking_ticket",
-										"end_parking"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"ended\",\n \"operatorName\": \"Berlin Parking\",\n \"operatorTicketID\": \"64894233\",\n \"ticketStartTime\": \"2017-01-10T19:34:22.000Z\",\n \"ticketEndTime\": \"2019-10-08T11:21:45.000Z\"\n}"
-						},
-						{
 							"name": "Error 404",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
