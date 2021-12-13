@@ -4291,6 +4291,38 @@
 					},
 					"response": [
 						{
+							"name": "Doors State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/doors",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"doors"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"insideLocks\": [\n        {\n            \"timestamp\": \"2021-09-22T13:02:42.713Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-09-22T13:02:45.669Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-09-22T13:02:51.407Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-09-22T13:02:48.596Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        }\n    ],\n    \"locks\": [\n        {\n            \"timestamp\": \"2021-12-03T16:26:45.514Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"lockState\": {\n                    \"value\": \"unlocked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-03T16:26:45.524Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"lockState\": {\n                    \"value\": \"unlocked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-03T16:26:45.536Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"lockState\": {\n                    \"value\": \"unlocked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-03T16:26:45.530Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"lockState\": {\n                    \"value\": \"unlocked\"\n                }\n            }\n        }\n    ],\n    \"positions\": [\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.430Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.429Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"position\": {\n                    \"value\": \"closed\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.430Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"position\": {\n                    \"value\": \"closed\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.430Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"position\": {\n                    \"value\": \"closed\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.429Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"all\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        }\n    ],\n    \"insideLocksState\": {\n        \"timestamp\": \"2021-05-15T17:15:27.429Z\",\n        \"data\": {\n            \"value\": \"locked\"\n        }\n    },\n    \"locksState\": {\n        \"timestamp\": \"2021-12-03T16:26:45.541Z\",\n        \"data\": {\n            \"value\": \"unlocked\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 400",
 							"originalRequest": {
 								"method": "GET",
@@ -4322,22 +4354,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -4393,33 +4409,6 @@
 							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
 						},
 						{
-							"name": "Doors State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/doors",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"doors"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"insideLocks\": [\n  {\n   \"location\": \"front_left\",\n   \"lock_state\": \"locked\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"lock_state\": \"unlocked\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"lock_state\": \"unlocked\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"lock_state\": \"unlocked\"\n  }\n ],\n \"locks\": [\n  {\n   \"location\": \"front_left\",\n   \"lock_state\": \"unlocked\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"lock_state\": \"unlocked\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"lock_state\": \"locked\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"lock_state\": \"locked\"\n  }\n ],\n \"positions\": [\n  {\n   \"location\": \"front_left\",\n   \"position\": \"open\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"position\": \"closed\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"position\": \"closed\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"position\": \"closed\"\n  },\n  {\n   \"location\": \"all\",\n   \"position\": \"closed\"\n  }\n ],\n \"insideLocksState\": \"locked\",\n \"locksState\": \"unlocked\"\n}"
-						},
-						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "GET",
@@ -4467,7 +4456,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"insideLocksState\": \"<string>\"\n}"
+							"raw": "{\n    \"locksState\": \"<string>\"\n}"
 						},
 						"url": {
 							"raw": "{{BASE_URL}}/doors/lock_unlock_doors",
@@ -4481,6 +4470,47 @@
 						}
 					},
 					"response": [
+						{
+							"name": "Doors State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"locksState\": \"locked\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/doors/lock_unlock_doors",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"doors",
+										"lock_unlock_doors"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"insideLocks\": [\n        {\n            \"timestamp\": \"2021-09-22T13:02:42.713Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-09-22T13:02:45.669Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-09-22T13:02:51.407Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-09-22T13:02:48.596Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        }\n    ],\n    \"locks\": [\n        {\n            \"timestamp\": \"2021-12-13T11:06:04.686Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:06:04.697Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:06:04.706Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:06:04.702Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"lockState\": {\n                    \"value\": \"locked\"\n                }\n            }\n        }\n    ],\n    \"positions\": [\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.430Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.429Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"position\": {\n                    \"value\": \"closed\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.430Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"position\": {\n                    \"value\": \"closed\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.430Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"position\": {\n                    \"value\": \"closed\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-05-15T17:15:27.429Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"all\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        }\n    ],\n    \"insideLocksState\": {\n        \"timestamp\": \"2021-05-15T17:15:27.429Z\",\n        \"data\": {\n            \"value\": \"locked\"\n        }\n    },\n    \"locksState\": {\n        \"timestamp\": \"2021-12-13T11:06:04.711Z\",\n        \"data\": {\n            \"value\": \"locked\"\n        }\n    }\n}"
+						},
 						{
 							"name": "Error 401",
 							"originalRequest": {
@@ -4578,58 +4608,10 @@
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
 						},
 						{
-							"name": "Doors State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"insideLocksState\": \"locked\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/doors/lock_unlock_doors",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"doors",
-										"lock_unlock_doors"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"insideLocks\": [\n  {\n   \"location\": \"front_left\",\n   \"lock_state\": \"locked\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"lock_state\": \"unlocked\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"lock_state\": \"unlocked\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"lock_state\": \"unlocked\"\n  }\n ],\n \"locks\": [\n  {\n   \"location\": \"front_left\",\n   \"lock_state\": \"unlocked\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"lock_state\": \"unlocked\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"lock_state\": \"locked\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"lock_state\": \"locked\"\n  }\n ],\n \"positions\": [\n  {\n   \"location\": \"front_left\",\n   \"position\": \"open\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"position\": \"closed\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"position\": \"closed\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"position\": \"closed\"\n  },\n  {\n   \"location\": \"all\",\n   \"position\": \"closed\"\n  }\n ],\n \"insideLocksState\": \"locked\",\n \"locksState\": \"unlocked\"\n}"
-						},
-						{
 							"name": "Error 404",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
