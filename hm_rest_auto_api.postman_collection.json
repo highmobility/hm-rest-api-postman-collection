@@ -12932,6 +12932,38 @@
 					},
 					"response": [
 						{
+							"name": "Wi-Fi State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/wi_fi",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"wi_fi"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-07-19T14:22:00.810Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"networkConnected\": {\n        \"timestamp\": \"2021-03-02T10:30:40.047Z\",\n        \"data\": {\n            \"value\": \"connected\"\n        }\n    },\n    \"networkSSID\": {\n        \"timestamp\": \"2021-07-19T14:21:54.293Z\",\n        \"data\": {\n            \"value\": \"HOME\"\n        }\n    },\n    \"networkSecurity\": {\n        \"timestamp\": \"2021-07-19T14:21:47.911Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 400",
 							"originalRequest": {
 								"method": "GET",
@@ -12963,22 +12995,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -13032,33 +13048,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
-						},
-						{
-							"name": "Wi-Fi State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/wi_fi",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"wi_fi"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"enabled\",\n \"networkConnected\": \"connected\",\n \"networkSSID\": \"HOME\",\n \"networkSecurity\": \"wpa2_personal\"\n}"
 						},
 						{
 							"name": "Error 401",
@@ -13126,7 +13115,16 @@
 							"name": "Wi-Fi State",
 							"originalRequest": {
 								"method": "PUT",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"networkSSID\": \"HOME\",\n    \"networkSecurity\": \"wpa2_personal\",\n    \"password\": \"great_secret12\"\n}"
@@ -13147,12 +13145,12 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"status\": \"enabled\",\n \"networkConnected\": \"connected\",\n \"networkSSID\": \"HOME\",\n \"networkSecurity\": \"wpa2_personal\"\n}"
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-07-19T14:22:00.810Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"networkConnected\": {\n        \"timestamp\": \"2021-03-02T10:30:40.047Z\",\n        \"data\": {\n            \"value\": \"connected\"\n        }\n    },\n    \"networkSSID\": {\n        \"timestamp\": \"2021-12-13T12:41:17.928Z\",\n        \"data\": {\n            \"value\": \"HOME\"\n        }\n    },\n    \"networkSecurity\": {\n        \"timestamp\": \"2021-12-13T12:41:17.937Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 403",
@@ -13191,22 +13189,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -13342,7 +13324,16 @@
 							"name": "Wi-Fi State",
 							"originalRequest": {
 								"method": "PUT",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"networkSSID\": \"HOME\"\n}"
@@ -13363,12 +13354,12 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"status\": \"enabled\",\n \"networkConnected\": \"connected\",\n \"networkSSID\": \"HOME\",\n \"networkSecurity\": \"wpa2_personal\"\n}"
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-07-19T14:22:00.810Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"networkConnected\": {\n        \"timestamp\": \"2021-03-02T10:30:40.047Z\",\n        \"data\": {\n            \"value\": \"connected\"\n        }\n    },\n    \"networkSSID\": {\n        \"timestamp\": \"2021-12-13T12:42:09.757Z\",\n        \"data\": {\n            \"value\": \"HOME\"\n        }\n    },\n    \"networkSecurity\": {\n        \"timestamp\": \"2021-12-13T12:41:17.937Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 403",
@@ -13439,22 +13430,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -13555,7 +13530,7 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Wi-Fi State",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
@@ -13564,17 +13539,42 @@
 										"value": "Bearer {{JWT}}"
 									},
 									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"enabled\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/wi_fi/enable_disable_wi_fi",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"wi_fi",
+										"enable_disable_wi_fi"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-13T12:42:55.328Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"networkConnected\": {\n        \"timestamp\": \"2021-03-02T10:30:40.047Z\",\n        \"data\": {\n            \"value\": \"connected\"\n        }\n    },\n    \"networkSSID\": {\n        \"timestamp\": \"2021-12-13T12:42:09.757Z\",\n        \"data\": {\n            \"value\": \"HOME\"\n        }\n    },\n    \"networkSecurity\": {\n        \"timestamp\": \"2021-12-13T12:41:17.937Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -13606,38 +13606,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 408,\n \"failureType\": \"vehicle_asleep\",\n \"failureDescription\": \"Vehicle Asleep\"\n}"
-						},
-						{
-							"name": "Wi-Fi State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"status\": \"enabled\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/wi_fi/enable_disable_wi_fi",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"wi_fi",
-										"enable_disable_wi_fi"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"enabled\",\n \"networkConnected\": \"connected\",\n \"networkSSID\": \"HOME\",\n \"networkSecurity\": \"wpa2_personal\"\n}"
 						},
 						{
 							"name": "Error 403",
