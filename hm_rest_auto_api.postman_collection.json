@@ -7887,6 +7887,38 @@
 					},
 					"response": [
 						{
+							"name": "Lights State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/lights",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"lights"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"frontExteriorLight\": {\n        \"timestamp\": \"2021-07-19T14:20:20.398Z\",\n        \"data\": {\n            \"value\": \"active_with_full_beam\"\n        }\n    },\n    \"rearExteriorLight\": {\n        \"timestamp\": \"2021-07-19T14:20:20.412Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"ambientLightColour\": {\n        \"timestamp\": \"2021-07-19T14:20:20.459Z\",\n        \"data\": {\n            \"red\": {\n                \"value\": 255\n            },\n            \"green\": {\n                \"value\": 0\n            },\n            \"blue\": {\n                \"value\": 0\n            }\n        }\n    },\n    \"reverseLight\": {\n        \"timestamp\": \"2021-05-10T13:37:50.310Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"emergencyBrakeLight\": {\n        \"timestamp\": \"2021-05-10T13:37:50.311Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"fogLights\": [\n        {\n            \"timestamp\": \"2021-07-19T14:20:20.472Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front\"\n                },\n                \"state\": {\n                    \"value\": \"inactive\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:20:20.486Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear\"\n                },\n                \"state\": {\n                    \"value\": \"active\"\n                }\n            }\n        }\n    ],\n    \"readingLamps\": [\n        {\n            \"timestamp\": \"2021-07-19T14:20:20.499Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"state\": {\n                    \"value\": \"active\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:20:20.512Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"state\": {\n                    \"value\": \"active\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:20:20.528Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"state\": {\n                    \"value\": \"inactive\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:20:20.540Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"state\": {\n                    \"value\": \"inactive\"\n                }\n            }\n        }\n    ],\n    \"interiorLights\": [\n        {\n            \"timestamp\": \"2021-07-19T14:20:20.555Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front\"\n                },\n                \"state\": {\n                    \"value\": \"inactive\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:20:20.568Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear\"\n                },\n                \"state\": {\n                    \"value\": \"active\"\n                }\n            }\n        }\n    ],\n    \"switchPosition\": {\n        \"timestamp\": \"2021-05-10T13:37:50.310Z\",\n        \"data\": {\n            \"value\": \"parking_light_right\"\n        }\n    },\n    \"parkingLightStatus\": {\n        \"timestamp\": \"2021-05-05T20:12:52.742Z\",\n        \"data\": {\n            \"value\": \"both\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "GET",
@@ -7948,22 +7980,6 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -7987,33 +8003,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 408,\n \"failureType\": \"vehicle_asleep\",\n \"failureDescription\": \"Vehicle Asleep\"\n}"
-						},
-						{
-							"name": "Lights State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/lights",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"lights"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"frontExteriorLight\": \"active_with_full_beam\",\n \"rearExteriorLight\": \"active\",\n \"ambientLightColour\": {\n  \"red\": 255,\n  \"green\": 0,\n  \"blue\": 0\n },\n \"reverseLight\": \"inactive\",\n \"emergencyBrakeLight\": \"inactive\",\n \"fogLights\": [\n  {\n   \"location\": \"front\",\n   \"state\": \"inactive\"\n  },\n  {\n   \"location\": \"rear\",\n   \"state\": \"active\"\n  }\n ],\n \"readingLamps\": [\n  {\n   \"location\": \"front_left\",\n   \"state\": \"active\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"state\": \"active\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"state\": \"inactive\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"state\": \"inactive\"\n  }\n ],\n \"interiorLights\": [\n  {\n   \"location\": \"front\",\n   \"state\": \"inactive\"\n  },\n  {\n   \"location\": \"rear\",\n   \"state\": \"active\"\n  }\n ]\n}"
 						},
 						{
 							"name": "Error 401",
@@ -8045,7 +8034,7 @@
 					]
 				},
 				{
-					"name": "Set the lights state.",
+					"name": "Set the lights state",
 					"request": {
 						"auth": {
 							"type": "noauth"
@@ -8078,6 +8067,47 @@
 					},
 					"response": [
 						{
+							"name": "Lights State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"frontExteriorLight\": \"active_with_full_beam\",\n    \"rearExteriorLight\": \"active\",\n    \"ambientLightColour\": {\n        \"red\": 255,\n        \"green\": 0,\n        \"blue\": 0\n    },\n    \"fogLights\": [\n        {\n            \"location\": \"front\",\n            \"state\": \"inactive\"\n        },\n        {\n            \"location\": \"rear\",\n            \"state\": \"active\"\n        }\n    ],\n    \"readingLamps\": [\n        {\n            \"location\": \"front_left\",\n            \"state\": \"active\"\n        },\n        {\n            \"location\": \"front_right\",\n            \"state\": \"active\"\n        },\n        {\n            \"location\": \"rear_right\",\n            \"state\": \"inactive\"\n        },\n        {\n            \"location\": \"rear_left\",\n            \"state\": \"inactive\"\n        }\n    ],\n    \"interiorLights\": [\n        {\n            \"location\": \"front\",\n            \"state\": \"inactive\"\n        },\n        {\n            \"location\": \"rear\",\n            \"state\": \"active\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/lights/control_lights",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"lights",
+										"control_lights"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"frontExteriorLight\": {\n        \"timestamp\": \"2021-12-13T11:56:31.901Z\",\n        \"data\": {\n            \"value\": \"active_with_full_beam\"\n        }\n    },\n    \"rearExteriorLight\": {\n        \"timestamp\": \"2021-12-13T11:56:31.919Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"ambientLightColour\": {\n        \"timestamp\": \"2021-12-13T11:56:31.946Z\",\n        \"data\": {\n            \"red\": {\n                \"value\": 255\n            },\n            \"green\": {\n                \"value\": 0\n            },\n            \"blue\": {\n                \"value\": 0\n            }\n        }\n    },\n    \"reverseLight\": {\n        \"timestamp\": \"2021-05-10T13:37:50.310Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"emergencyBrakeLight\": {\n        \"timestamp\": \"2021-05-10T13:37:50.311Z\",\n        \"data\": {\n            \"value\": \"inactive\"\n        }\n    },\n    \"fogLights\": [\n        {\n            \"timestamp\": \"2021-12-13T11:56:31.955Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front\"\n                },\n                \"state\": {\n                    \"value\": \"inactive\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:56:31.962Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear\"\n                },\n                \"state\": {\n                    \"value\": \"active\"\n                }\n            }\n        }\n    ],\n    \"readingLamps\": [\n        {\n            \"timestamp\": \"2021-12-13T11:56:31.970Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"state\": {\n                    \"value\": \"active\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:56:31.977Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"state\": {\n                    \"value\": \"active\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:56:31.984Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"state\": {\n                    \"value\": \"inactive\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:56:31.990Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"state\": {\n                    \"value\": \"inactive\"\n                }\n            }\n        }\n    ],\n    \"interiorLights\": [\n        {\n            \"timestamp\": \"2021-12-13T11:56:31.995Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front\"\n                },\n                \"state\": {\n                    \"value\": \"inactive\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:56:32.000Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear\"\n                },\n                \"state\": {\n                    \"value\": \"active\"\n                }\n            }\n        }\n    ],\n    \"switchPosition\": {\n        \"timestamp\": \"2021-05-10T13:37:50.310Z\",\n        \"data\": {\n            \"value\": \"parking_light_right\"\n        }\n    },\n    \"parkingLightStatus\": {\n        \"timestamp\": \"2021-05-05T20:12:52.742Z\",\n        \"data\": {\n            \"value\": \"both\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 401",
 							"originalRequest": {
 								"method": "PUT",
@@ -8149,22 +8179,6 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -8225,38 +8239,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
-						},
-						{
-							"name": "Lights State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"frontExteriorLight\": \"active_with_full_beam\",\n    \"rearExteriorLight\": \"active\",\n    \"ambientLightColour\": {\n        \"red\": 255,\n        \"green\": 0,\n        \"blue\": 0\n    },\n    \"fogLights\": [\n        {\n            \"location\": \"front\",\n            \"state\": \"inactive\"\n        },\n        {\n            \"location\": \"rear\",\n            \"state\": \"active\"\n        }\n    ],\n    \"readingLamps\": [\n        {\n            \"location\": \"front_left\",\n            \"state\": \"active\"\n        },\n        {\n            \"location\": \"front_right\",\n            \"state\": \"active\"\n        },\n        {\n            \"location\": \"rear_right\",\n            \"state\": \"inactive\"\n        },\n        {\n            \"location\": \"rear_left\",\n            \"state\": \"inactive\"\n        }\n    ],\n    \"interiorLights\": [\n        {\n            \"location\": \"front\",\n            \"state\": \"inactive\"\n        },\n        {\n            \"location\": \"rear\",\n            \"state\": \"active\"\n        }\n    ]\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/lights/control_lights",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"lights",
-										"control_lights"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"frontExteriorLight\": \"active_with_full_beam\",\n \"rearExteriorLight\": \"active\",\n \"ambientLightColour\": {\n  \"red\": 255,\n  \"green\": 0,\n  \"blue\": 0\n },\n \"reverseLight\": \"inactive\",\n \"emergencyBrakeLight\": \"inactive\",\n \"fogLights\": [\n  {\n   \"location\": \"front\",\n   \"state\": \"inactive\"\n  },\n  {\n   \"location\": \"rear\",\n   \"state\": \"active\"\n  }\n ],\n \"readingLamps\": [\n  {\n   \"location\": \"front_left\",\n   \"state\": \"active\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"state\": \"active\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"state\": \"inactive\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"state\": \"inactive\"\n  }\n ],\n \"interiorLights\": [\n  {\n   \"location\": \"front\",\n   \"state\": \"inactive\"\n  },\n  {\n   \"location\": \"rear\",\n   \"state\": \"active\"\n  }\n ]\n}"
 						}
 					]
 				}
