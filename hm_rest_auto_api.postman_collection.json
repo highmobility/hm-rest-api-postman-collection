@@ -12162,6 +12162,38 @@
 					},
 					"response": [
 						{
+							"name": "Trunk State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/trunk",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"trunk"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"lock\": {\n        \"timestamp\": \"2021-07-19T14:20:59.603Z\",\n        \"data\": {\n            \"value\": \"unlocked\"\n        }\n    },\n    \"position\": {\n        \"timestamp\": \"2021-07-19T14:20:59.618Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"lockSafety\": {\n        \"timestamp\": \"2021-05-05T20:12:52.752Z\",\n        \"data\": {\n            \"value\": \"safe\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 401",
 							"originalRequest": {
 								"method": "GET",
@@ -12223,22 +12255,6 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -12289,33 +12305,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
-						},
-						{
-							"name": "Trunk State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/trunk",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"trunk"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"lock\": \"unlocked\",\n \"position\": \"open\"\n}"
 						}
 					]
 				},
@@ -12356,7 +12345,16 @@
 							"name": "Trunk State",
 							"originalRequest": {
 								"method": "PUT",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"lock\": \"unlocked\",\n    \"position\": \"open\"\n}"
@@ -12377,34 +12375,18 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"lock\": \"unlocked\",\n \"position\": \"open\"\n}"
+							"body": "{\n    \"lock\": {\n        \"timestamp\": \"2021-12-13T12:36:58.543Z\",\n        \"data\": {\n            \"value\": \"unlocked\"\n        }\n    },\n    \"position\": {\n        \"timestamp\": \"2021-12-13T12:36:58.552Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"lockSafety\": {\n        \"timestamp\": \"2021-05-05T20:12:52.752Z\",\n        \"data\": {\n            \"value\": \"safe\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 404",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
