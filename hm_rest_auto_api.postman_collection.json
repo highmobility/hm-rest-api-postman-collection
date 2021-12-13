@@ -4649,10 +4649,10 @@
 			]
 		},
 		{
-			"name": "engine start stop",
+			"name": "engine",
 			"item": [
 				{
-					"name": "Get Engine Start-Stop state",
+					"name": "Get Engine state",
 					"request": {
 						"auth": {
 							"type": "noauth"
@@ -4665,28 +4665,60 @@
 							}
 						],
 						"url": {
-							"raw": "{{BASE_URL}}/engine_start_stop",
+							"raw": "{{BASE_URL}}/engine",
 							"host": [
 								"{{BASE_URL}}"
 							],
 							"path": [
-								"engine_start_stop"
+								"engine"
 							]
 						}
 					},
 					"response": [
+						{
+							"name": "Engine State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/engine",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"engine"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-10-29T15:17:25.464Z\",\n        \"data\": {\n            \"value\": \"off\"\n        }\n    },\n    \"startStopState\": {\n        \"timestamp\": \"2021-06-13T19:20:31.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"startStopEnabled\": {\n        \"timestamp\": \"2021-10-29T15:19:58.838Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    }\n}"
+						},
 						{
 							"name": "Error 401",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop",
+									"raw": "{{BASE_URL}}/engine",
 									"host": [
 										"{{BASE_URL}}"
 									],
 									"path": [
-										"engine_start_stop"
+										"engine"
 									]
 								}
 							},
@@ -4708,12 +4740,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop",
+									"raw": "{{BASE_URL}}/engine",
 									"host": [
 										"{{BASE_URL}}"
 									],
 									"path": [
-										"engine_start_stop"
+										"engine"
 									]
 								}
 							},
@@ -4737,31 +4769,15 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop",
+									"raw": "{{BASE_URL}}/engine",
 									"host": [
 										"{{BASE_URL}}"
 									],
 									"path": [
-										"engine_start_stop"
+										"engine"
 									]
 								}
 							},
@@ -4778,44 +4794,17 @@
 							"body": "{\n \"errorCode\": 408,\n \"failureType\": \"vehicle_asleep\",\n \"failureDescription\": \"Vehicle Asleep\"\n}"
 						},
 						{
-							"name": "Engine Start-Stop State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"engine_start_stop"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"active\"\n}"
-						},
-						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop",
+									"raw": "{{BASE_URL}}/engine",
 									"host": [
 										"{{BASE_URL}}"
 									],
 									"path": [
-										"engine_start_stop"
+										"engine"
 									]
 								}
 							},
@@ -4834,7 +4823,7 @@
 					]
 				},
 				{
-					"name": "Activate or deactivate the Start-Stop system of the engine. When activated, this will automatically shut down and restart the internal combustion engine when the car is stopped.",
+					"name": "Attempt to turn the vehicle engine on or off",
 					"request": {
 						"auth": {
 							"type": "noauth"
@@ -4855,34 +4844,43 @@
 							"raw": "{\n    \"status\": \"<string>\"\n}"
 						},
 						"url": {
-							"raw": "{{BASE_URL}}/engine_start_stop/activate_deactivate_start_stop",
+							"raw": "{{BASE_URL}}/engine/turn_engine_on_off",
 							"host": [
 								"{{BASE_URL}}"
 							],
 							"path": [
-								"engine_start_stop",
-								"activate_deactivate_start_stop"
+								"engine",
+								"turn_engine_on_off"
 							]
 						}
 					},
 					"response": [
 						{
-							"name": "Engine Start-Stop State",
+							"name": "Engine State",
 							"originalRequest": {
 								"method": "PUT",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"status\": \"active\"\n}"
+									"raw": "{\n    \"status\": \"off\"\n}"
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop/activate_deactivate_start_stop",
+									"raw": "{{BASE_URL}}/engine/turn_engine_on_off",
 									"host": [
 										"{{BASE_URL}}"
 									],
 									"path": [
-										"engine_start_stop",
-										"activate_deactivate_start_stop"
+										"engine",
+										"turn_engine_on_off"
 									]
 								}
 							},
@@ -4896,7 +4894,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"status\": \"active\"\n}"
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-13T11:12:47.439Z\",\n        \"data\": {\n            \"value\": \"off\"\n        }\n    },\n    \"startStopState\": {\n        \"timestamp\": \"2021-06-13T19:20:31.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"startStopEnabled\": {\n        \"timestamp\": \"2021-10-29T15:19:58.838Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 400",
@@ -4908,13 +4906,13 @@
 									"raw": "{\n    \"status\": \"active\"\n}"
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop/activate_deactivate_start_stop",
+									"raw": "{{BASE_URL}}/engine/turn_engine_on_off",
 									"host": [
 										"{{BASE_URL}}"
 									],
 									"path": [
-										"engine_start_stop",
-										"activate_deactivate_start_stop"
+										"engine",
+										"turn_engine_on_off"
 									]
 								}
 							},
@@ -4940,13 +4938,13 @@
 									"raw": "{\n    \"status\": \"active\"\n}"
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop/activate_deactivate_start_stop",
+									"raw": "{{BASE_URL}}/engine/turn_engine_on_off",
 									"host": [
 										"{{BASE_URL}}"
 									],
 									"path": [
-										"engine_start_stop",
-										"activate_deactivate_start_stop"
+										"engine",
+										"turn_engine_on_off"
 									]
 								}
 							},
@@ -4972,13 +4970,13 @@
 									"raw": "{\n    \"status\": \"active\"\n}"
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop/activate_deactivate_start_stop",
+									"raw": "{{BASE_URL}}/engine/turn_engine_on_off",
 									"host": [
 										"{{BASE_URL}}"
 									],
 									"path": [
-										"engine_start_stop",
-										"activate_deactivate_start_stop"
+										"engine",
+										"turn_engine_on_off"
 									]
 								}
 							},
@@ -5002,19 +5000,212 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"active\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/engine/turn_engine_on_off",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"engine",
+										"turn_engine_on_off"
+									]
+								}
+							},
+							"status": "Request Timeout",
+							"code": 408,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"errorCode\": 408,\n \"failureType\": \"vehicle_asleep\",\n \"failureDescription\": \"Vehicle Asleep\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Activate or deactivate the Start-Stop system of the engine. When activated, this will automatically shut down and restart the internal combustion engine when the vehicle is stopped.",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{JWT}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"startStopEnabled\": \"<string>\"\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/engine/enable_disable_start_stop",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"engine",
+								"enable_disable_start_stop"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Engine State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
 									},
 									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"startStopEnabled\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/engine/enable_disable_start_stop",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"engine",
+										"enable_disable_start_stop"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-13T11:12:47.439Z\",\n        \"data\": {\n            \"value\": \"off\"\n        }\n    },\n    \"startStopState\": {\n        \"timestamp\": \"2021-06-13T19:20:31.966Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"startStopEnabled\": {\n        \"timestamp\": \"2021-12-13T11:14:28.900Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 400",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"active\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/engine/enable_disable_start_stop",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"engine",
+										"enable_disable_start_stop"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
+						},
+						{
+							"name": "Error 403",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"active\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/engine/enable_disable_start_stop",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"engine",
+										"enable_disable_start_stop"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
+						},
+						{
+							"name": "Error 401",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"active\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/engine/enable_disable_start_stop",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"engine",
+										"enable_disable_start_stop"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -5025,13 +5216,13 @@
 									"raw": "{\n    \"status\": \"active\"\n}"
 								},
 								"url": {
-									"raw": "{{BASE_URL}}/engine_start_stop/activate_deactivate_start_stop",
+									"raw": "{{BASE_URL}}/engine/enable_disable_start_stop",
 									"host": [
 										"{{BASE_URL}}"
 									],
 									"path": [
-										"engine_start_stop",
-										"activate_deactivate_start_stop"
+										"engine",
+										"enable_disable_start_stop"
 									]
 								}
 							},
