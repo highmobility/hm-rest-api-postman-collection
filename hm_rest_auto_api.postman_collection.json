@@ -11777,26 +11777,42 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Theft Alarm State",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/theft_alarm",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"theft_alarm"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-03T16:22:37.601Z\",\n        \"data\": {\n            \"value\": \"armed\"\n        }\n    },\n    \"interiorProtectionStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"towProtectionStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"lastWarningReason\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"hood\"\n        }\n    },\n    \"lastEvent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"1970-01-01T00:00:02.020Z\"\n        }\n    },\n    \"lastEventLevel\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"low\"\n        }\n    },\n    \"eventType\": {\n        \"timestamp\": \"2021-03-02T10:30:40.037Z\",\n        \"data\": {\n            \"value\": \"rear_right\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -11823,33 +11839,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 408,\n \"failureType\": \"vehicle_asleep\",\n \"failureDescription\": \"Vehicle Asleep\"\n}"
-						},
-						{
-							"name": "Theft Alarm State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/theft_alarm",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"theft_alarm"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"armed\"\n}"
 						},
 						{
 							"name": "Error 400",
@@ -11968,6 +11957,47 @@
 					},
 					"response": [
 						{
+							"name": "Theft Alarm State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"armed\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/theft_alarm/set_theft_alarm",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"theft_alarm",
+										"set_theft_alarm"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-13T12:34:40.294Z\",\n        \"data\": {\n            \"value\": \"armed\"\n        }\n    },\n    \"interiorProtectionStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"towProtectionStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"lastWarningReason\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"hood\"\n        }\n    },\n    \"lastEvent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"1970-01-01T00:00:02.020Z\"\n        }\n    },\n    \"lastEventLevel\": {\n        \"timestamp\": \"2021-03-02T10:30:40.036Z\",\n        \"data\": {\n            \"value\": \"low\"\n        }\n    },\n    \"eventType\": {\n        \"timestamp\": \"2021-03-02T10:30:40.037Z\",\n        \"data\": {\n            \"value\": \"rear_right\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "PUT",
@@ -12004,22 +12034,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -12083,38 +12097,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
-						},
-						{
-							"name": "Theft Alarm State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"status\": \"armed\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/theft_alarm/set_theft_alarm",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"theft_alarm",
-										"set_theft_alarm"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"armed\"\n}"
 						},
 						{
 							"name": "Error 400",
