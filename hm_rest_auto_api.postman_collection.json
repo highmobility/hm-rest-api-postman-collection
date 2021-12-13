@@ -10236,6 +10236,38 @@
 					},
 					"response": [
 						{
+							"name": "Power Take-Off State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/power_takeoff",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"power_takeoff"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-03T16:22:31.990Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"engaged\": {\n        \"timestamp\": \"2021-03-02T10:30:40.029Z\",\n        \"data\": {\n            \"value\": \"engaged\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "GET",
@@ -10267,22 +10299,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -10363,33 +10379,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
-						},
-						{
-							"name": "Power Take-Off State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/power_takeoff",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"power_takeoff"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"active\",\n \"engaged\": \"engaged\"\n}"
 						}
 					]
 				},
@@ -10427,7 +10416,7 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Power Take-Off State",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
@@ -10436,17 +10425,42 @@
 										"value": "Bearer {{JWT}}"
 									},
 									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"active\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/power_takeoff/activate_deactivate_power_takeoff",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"power_takeoff",
+										"activate_deactivate_power_takeoff"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-13T12:20:24.275Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"engaged\": {\n        \"timestamp\": \"2021-03-02T10:30:40.029Z\",\n        \"data\": {\n            \"value\": \"engaged\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -10510,38 +10524,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
-						},
-						{
-							"name": "Power Take-Off State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"status\": \"active\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/power_takeoff/activate_deactivate_power_takeoff",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"power_takeoff",
-										"activate_deactivate_power_takeoff"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"active\",\n \"engaged\": \"engaged\"\n}"
 						},
 						{
 							"name": "Error 400",
