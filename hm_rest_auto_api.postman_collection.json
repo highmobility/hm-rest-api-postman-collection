@@ -5655,6 +5655,38 @@
 					},
 					"response": [
 						{
+							"name": "Home Charger State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/home_charger",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"home_charger"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"chargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"authenticationMechanism\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"app\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingPowerKW\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 11.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"solarCharging\": {\n        \"timestamp\": \"2021-07-19T14:14:11.888Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"wifiHotspotEnabled\": {\n        \"timestamp\": \"2021-12-03T16:22:36.053Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"wifiHotspotSSID\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"Charger 7612\"\n        }\n    },\n    \"wiFiHotspotSecurity\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    },\n    \"wiFiHotspotPassword\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"ZW3vARNUBe\"\n        }\n    },\n    \"authenticationState\": {\n        \"timestamp\": \"2021-12-03T16:22:36.367Z\",\n        \"data\": {\n            \"value\": \"authenticated\"\n        }\n    },\n    \"chargeCurrent\": {\n        \"timestamp\": \"2021-07-19T14:13:58.818Z\",\n        \"data\": {\n            \"value\": 0.5,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"maximumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"minimumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 0.1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"coordinates\": {\n        \"timestamp\": \"2021-03-02T10:30:40.022Z\",\n        \"data\": {\n            \"latitude\": {\n                \"value\": 52.520008\n            },\n            \"longitude\": {\n                \"value\": 13.404954\n            }\n        }\n    },\n    \"priceTariffs\": [\n        {\n            \"timestamp\": \"2021-07-19T14:14:05.429Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"starting_fee\"\n                },\n                \"price\": {\n                    \"value\": 4.5\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:14:05.443Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_minute\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:14:05.460Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_kwh\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"Ripple\"\n                }\n            }\n        }\n    ],\n    \"chargingPower\": {\n        \"timestamp\": \"2021-03-02T10:30:40.023Z\",\n        \"data\": {\n            \"value\": 350,\n            \"unit\": \"kilowatts\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "GET",
@@ -5716,22 +5748,6 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"url": {
@@ -5782,33 +5798,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
-						},
-						{
-							"name": "Home Charger State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/home_charger",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"home_charger"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"chargingStatus\": \"charging\",\n \"authenticationMechanism\": \"app\",\n \"plugType\": \"type_2\",\n \"chargingPowerKW\": 11.5,\n \"solarCharging\": \"active\",\n \"wifiHotspotEnabled\": \"enabled\",\n \"wifiHotspotSSID\": \"Charger 7612\",\n \"wiFiHotspotSecurity\": \"wpa2_personal\",\n \"wiFiHotspotPassword\": \"ZW3vARNUBe\",\n \"authenticationState\": \"authenticated\",\n \"chargeCurrentDC\": 0.5,\n \"maximumChargeCurrent\": 1,\n \"minimumChargeCurrent\": \"<float>\",\n \"coordinates\": {\n  \"latitude\": 52.520008,\n  \"longitude\": 13.404954\n },\n \"priceTariffs\": [\n  {\n   \"pricing_type\": \"starting_fee\",\n   \"price\": 4.5,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_minute\",\n   \"price\": 0.3,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_kwh\",\n   \"price\": 0.3,\n   \"currency\": \"Ripple\"\n  }\n ]\n}"
 						}
 					]
 				},
@@ -5831,7 +5820,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"chargeCurrentDC\": \"<float>\"\n}"
+							"raw": "{\n    \"chargeCurrent\": {\n        \"<string>\": \"<float>\"\n    }\n}"
 						},
 						"url": {
 							"raw": "{{BASE_URL}}/home_charger/set_charge_current",
@@ -5846,7 +5835,7 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Home Charger State",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
@@ -5855,17 +5844,42 @@
 										"value": "Bearer {{JWT}}"
 									},
 									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"chargeCurrent\": {\n        \"amperes\": 0.5\n    }\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/home_charger/set_charge_current",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"home_charger",
+										"set_charge_current"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"chargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"authenticationMechanism\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"app\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingPowerKW\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 11.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"solarCharging\": {\n        \"timestamp\": \"2021-07-19T14:14:11.888Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"wifiHotspotEnabled\": {\n        \"timestamp\": \"2021-12-03T16:22:36.053Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"wifiHotspotSSID\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"Charger 7612\"\n        }\n    },\n    \"wiFiHotspotSecurity\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    },\n    \"wiFiHotspotPassword\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"ZW3vARNUBe\"\n        }\n    },\n    \"authenticationState\": {\n        \"timestamp\": \"2021-12-03T16:22:36.367Z\",\n        \"data\": {\n            \"value\": \"authenticated\"\n        }\n    },\n    \"chargeCurrent\": {\n        \"timestamp\": \"2021-12-13T11:40:23.747Z\",\n        \"data\": {\n            \"value\": 0.5,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"maximumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"minimumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 0.1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"coordinates\": {\n        \"timestamp\": \"2021-03-02T10:30:40.022Z\",\n        \"data\": {\n            \"latitude\": {\n                \"value\": 52.520008\n            },\n            \"longitude\": {\n                \"value\": 13.404954\n            }\n        }\n    },\n    \"priceTariffs\": [\n        {\n            \"timestamp\": \"2021-07-19T14:14:05.429Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"starting_fee\"\n                },\n                \"price\": {\n                    \"value\": 4.5\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:14:05.443Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_minute\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:14:05.460Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_kwh\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"Ripple\"\n                }\n            }\n        }\n    ],\n    \"chargingPower\": {\n        \"timestamp\": \"2021-03-02T10:30:40.023Z\",\n        \"data\": {\n            \"value\": 350,\n            \"unit\": \"kilowatts\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -5961,38 +5975,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
-						},
-						{
-							"name": "Home Charger State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"chargeCurrentDC\": 0.5\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/home_charger/set_charge_current",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"home_charger",
-										"set_charge_current"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"chargingStatus\": \"charging\",\n \"authenticationMechanism\": \"app\",\n \"plugType\": \"type_2\",\n \"chargingPowerKW\": 11.5,\n \"solarCharging\": \"active\",\n \"wifiHotspotEnabled\": \"enabled\",\n \"wifiHotspotSSID\": \"Charger 7612\",\n \"wiFiHotspotSecurity\": \"wpa2_personal\",\n \"wiFiHotspotPassword\": \"ZW3vARNUBe\",\n \"authenticationState\": \"authenticated\",\n \"chargeCurrentDC\": 0.5,\n \"maximumChargeCurrent\": 1,\n \"minimumChargeCurrent\": \"<float>\",\n \"coordinates\": {\n  \"latitude\": 52.520008,\n  \"longitude\": 13.404954\n },\n \"priceTariffs\": [\n  {\n   \"pricing_type\": \"starting_fee\",\n   \"price\": 4.5,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_minute\",\n   \"price\": 0.3,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_kwh\",\n   \"price\": 0.3,\n   \"currency\": \"Ripple\"\n  }\n ]\n}"
 						},
 						{
 							"name": "Error 403",
@@ -6062,6 +6044,47 @@
 					},
 					"response": [
 						{
+							"name": "Home Charger State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"priceTariffs\": [\n        {\n            \"pricingType\": \"starting_fee\",\n            \"price\": 4.5,\n            \"currency\": \"EUR\"\n        },\n        {\n            \"pricingType\": \"per_minute\",\n            \"price\": 0.3,\n            \"currency\": \"EUR\"\n        },\n        {\n            \"pricingType\": \"per_kwh\",\n            \"price\": 0.3,\n            \"currency\": \"Ripple\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/home_charger/set_price_tariffs",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"home_charger",
+										"set_price_tariffs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"chargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"authenticationMechanism\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"app\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingPowerKW\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 11.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"solarCharging\": {\n        \"timestamp\": \"2021-07-19T14:14:11.888Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"wifiHotspotEnabled\": {\n        \"timestamp\": \"2021-12-03T16:22:36.053Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"wifiHotspotSSID\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"Charger 7612\"\n        }\n    },\n    \"wiFiHotspotSecurity\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    },\n    \"wiFiHotspotPassword\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"ZW3vARNUBe\"\n        }\n    },\n    \"authenticationState\": {\n        \"timestamp\": \"2021-12-03T16:22:36.367Z\",\n        \"data\": {\n            \"value\": \"authenticated\"\n        }\n    },\n    \"chargeCurrent\": {\n        \"timestamp\": \"2021-12-13T11:40:23.747Z\",\n        \"data\": {\n            \"value\": 0.5,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"maximumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"minimumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 0.1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"coordinates\": {\n        \"timestamp\": \"2021-03-02T10:30:40.022Z\",\n        \"data\": {\n            \"latitude\": {\n                \"value\": 52.520008\n            },\n            \"longitude\": {\n                \"value\": 13.404954\n            }\n        }\n    },\n    \"priceTariffs\": [\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.275Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"starting_fee\"\n                },\n                \"price\": {\n                    \"value\": 4.5\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.288Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_minute\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.302Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_kwh\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"Ripple\"\n                }\n            }\n        }\n    ],\n    \"chargingPower\": {\n        \"timestamp\": \"2021-03-02T10:30:40.023Z\",\n        \"data\": {\n            \"value\": 350,\n            \"unit\": \"kilowatts\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "PUT",
@@ -6158,58 +6181,10 @@
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
 						},
 						{
-							"name": "Home Charger State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"priceTariffs\": [\n        {\n            \"pricing_type\": \"starting_fee\",\n            \"price\": 4.5,\n            \"currency\": \"EUR\"\n        },\n        {\n            \"pricing_type\": \"per_minute\",\n            \"price\": 0.3,\n            \"currency\": \"EUR\"\n        },\n        {\n            \"pricing_type\": \"per_kwh\",\n            \"price\": 0.3,\n            \"currency\": \"Ripple\"\n        }\n    ]\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/home_charger/set_price_tariffs",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"home_charger",
-										"set_price_tariffs"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"chargingStatus\": \"charging\",\n \"authenticationMechanism\": \"app\",\n \"plugType\": \"type_2\",\n \"chargingPowerKW\": 11.5,\n \"solarCharging\": \"active\",\n \"wifiHotspotEnabled\": \"enabled\",\n \"wifiHotspotSSID\": \"Charger 7612\",\n \"wiFiHotspotSecurity\": \"wpa2_personal\",\n \"wiFiHotspotPassword\": \"ZW3vARNUBe\",\n \"authenticationState\": \"authenticated\",\n \"chargeCurrentDC\": 0.5,\n \"maximumChargeCurrent\": 1,\n \"minimumChargeCurrent\": \"<float>\",\n \"coordinates\": {\n  \"latitude\": 52.520008,\n  \"longitude\": 13.404954\n },\n \"priceTariffs\": [\n  {\n   \"pricing_type\": \"starting_fee\",\n   \"price\": 4.5,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_minute\",\n   \"price\": 0.3,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_kwh\",\n   \"price\": 0.3,\n   \"currency\": \"Ripple\"\n  }\n ]\n}"
-						},
-						{
 							"name": "Error 404",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -6278,6 +6253,47 @@
 					},
 					"response": [
 						{
+							"name": "Home Charger State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"solarCharging\": \"active\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/home_charger/activate_deactivate_solar_charging",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"home_charger",
+										"activate_deactivate_solar_charging"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"chargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"authenticationMechanism\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"app\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingPowerKW\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 11.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"solarCharging\": {\n        \"timestamp\": \"2021-12-13T11:45:18.296Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"wifiHotspotEnabled\": {\n        \"timestamp\": \"2021-12-03T16:22:36.053Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"wifiHotspotSSID\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"Charger 7612\"\n        }\n    },\n    \"wiFiHotspotSecurity\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    },\n    \"wiFiHotspotPassword\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"ZW3vARNUBe\"\n        }\n    },\n    \"authenticationState\": {\n        \"timestamp\": \"2021-12-03T16:22:36.367Z\",\n        \"data\": {\n            \"value\": \"authenticated\"\n        }\n    },\n    \"chargeCurrent\": {\n        \"timestamp\": \"2021-12-13T11:40:23.747Z\",\n        \"data\": {\n            \"value\": 0.5,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"maximumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"minimumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 0.1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"coordinates\": {\n        \"timestamp\": \"2021-03-02T10:30:40.022Z\",\n        \"data\": {\n            \"latitude\": {\n                \"value\": 52.520008\n            },\n            \"longitude\": {\n                \"value\": 13.404954\n            }\n        }\n    },\n    \"priceTariffs\": [\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.275Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"starting_fee\"\n                },\n                \"price\": {\n                    \"value\": 4.5\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.288Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_minute\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.302Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_kwh\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"Ripple\"\n                }\n            }\n        }\n    ],\n    \"chargingPower\": {\n        \"timestamp\": \"2021-03-02T10:30:40.023Z\",\n        \"data\": {\n            \"value\": 350,\n            \"unit\": \"kilowatts\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 401",
 							"originalRequest": {
 								"method": "PUT",
@@ -6342,58 +6358,10 @@
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
 						},
 						{
-							"name": "Home Charger State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"solarCharging\": \"active\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/home_charger/activate_deactivate_solar_charging",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"home_charger",
-										"activate_deactivate_solar_charging"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"chargingStatus\": \"charging\",\n \"authenticationMechanism\": \"app\",\n \"plugType\": \"type_2\",\n \"chargingPowerKW\": 11.5,\n \"solarCharging\": \"active\",\n \"wifiHotspotEnabled\": \"enabled\",\n \"wifiHotspotSSID\": \"Charger 7612\",\n \"wiFiHotspotSecurity\": \"wpa2_personal\",\n \"wiFiHotspotPassword\": \"ZW3vARNUBe\",\n \"authenticationState\": \"authenticated\",\n \"chargeCurrentDC\": 0.5,\n \"maximumChargeCurrent\": 1,\n \"minimumChargeCurrent\": \"<float>\",\n \"coordinates\": {\n  \"latitude\": 52.520008,\n  \"longitude\": 13.404954\n },\n \"priceTariffs\": [\n  {\n   \"pricing_type\": \"starting_fee\",\n   \"price\": 4.5,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_minute\",\n   \"price\": 0.3,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_kwh\",\n   \"price\": 0.3,\n   \"currency\": \"Ripple\"\n  }\n ]\n}"
-						},
-						{
 							"name": "Error 404",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -6494,6 +6462,47 @@
 					},
 					"response": [
 						{
+							"name": "Home Charger State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"wifiHotspotEnabled\": \"enabled\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/home_charger/enable_disable_wi_fi_hotspot",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"home_charger",
+										"enable_disable_wi_fi_hotspot"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"chargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"authenticationMechanism\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"app\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingPowerKW\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 11.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"solarCharging\": {\n        \"timestamp\": \"2021-12-13T11:45:18.296Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"wifiHotspotEnabled\": {\n        \"timestamp\": \"2021-12-13T11:46:32.630Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"wifiHotspotSSID\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"Charger 7612\"\n        }\n    },\n    \"wiFiHotspotSecurity\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    },\n    \"wiFiHotspotPassword\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"ZW3vARNUBe\"\n        }\n    },\n    \"authenticationState\": {\n        \"timestamp\": \"2021-12-03T16:22:36.367Z\",\n        \"data\": {\n            \"value\": \"authenticated\"\n        }\n    },\n    \"chargeCurrent\": {\n        \"timestamp\": \"2021-12-13T11:40:23.747Z\",\n        \"data\": {\n            \"value\": 0.5,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"maximumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"minimumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 0.1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"coordinates\": {\n        \"timestamp\": \"2021-03-02T10:30:40.022Z\",\n        \"data\": {\n            \"latitude\": {\n                \"value\": 52.520008\n            },\n            \"longitude\": {\n                \"value\": 13.404954\n            }\n        }\n    },\n    \"priceTariffs\": [\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.275Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"starting_fee\"\n                },\n                \"price\": {\n                    \"value\": 4.5\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.288Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_minute\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.302Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_kwh\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"Ripple\"\n                }\n            }\n        }\n    ],\n    \"chargingPower\": {\n        \"timestamp\": \"2021-03-02T10:30:40.023Z\",\n        \"data\": {\n            \"value\": 350,\n            \"unit\": \"kilowatts\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 401",
 							"originalRequest": {
 								"method": "PUT",
@@ -6533,22 +6542,6 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -6577,38 +6570,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 408,\n \"failureType\": \"vehicle_asleep\",\n \"failureDescription\": \"Vehicle Asleep\"\n}"
-						},
-						{
-							"name": "Home Charger State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"wifiHotspotEnabled\": \"enabled\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/home_charger/enable_disable_wi_fi_hotspot",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"home_charger",
-										"enable_disable_wi_fi_hotspot"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"chargingStatus\": \"charging\",\n \"authenticationMechanism\": \"app\",\n \"plugType\": \"type_2\",\n \"chargingPowerKW\": 11.5,\n \"solarCharging\": \"active\",\n \"wifiHotspotEnabled\": \"enabled\",\n \"wifiHotspotSSID\": \"Charger 7612\",\n \"wiFiHotspotSecurity\": \"wpa2_personal\",\n \"wiFiHotspotPassword\": \"ZW3vARNUBe\",\n \"authenticationState\": \"authenticated\",\n \"chargeCurrentDC\": 0.5,\n \"maximumChargeCurrent\": 1,\n \"minimumChargeCurrent\": \"<float>\",\n \"coordinates\": {\n  \"latitude\": 52.520008,\n  \"longitude\": 13.404954\n },\n \"priceTariffs\": [\n  {\n   \"pricing_type\": \"starting_fee\",\n   \"price\": 4.5,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_minute\",\n   \"price\": 0.3,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_kwh\",\n   \"price\": 0.3,\n   \"currency\": \"Ripple\"\n  }\n ]\n}"
 						},
 						{
 							"name": "Error 403",
@@ -6710,6 +6671,47 @@
 					},
 					"response": [
 						{
+							"name": "Home Charger State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"authenticationState\": \"authenticated\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/home_charger/authenticate_expire",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"home_charger",
+										"authenticate_expire"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"chargingStatus\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"charging\"\n        }\n    },\n    \"authenticationMechanism\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"app\"\n        }\n    },\n    \"plugType\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"type_2\"\n        }\n    },\n    \"chargingPowerKW\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 11.5,\n            \"unit\": \"kilowatts\"\n        }\n    },\n    \"solarCharging\": {\n        \"timestamp\": \"2021-12-13T11:45:18.296Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    },\n    \"wifiHotspotEnabled\": {\n        \"timestamp\": \"2021-12-13T11:46:32.630Z\",\n        \"data\": {\n            \"value\": \"enabled\"\n        }\n    },\n    \"wifiHotspotSSID\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"Charger 7612\"\n        }\n    },\n    \"wiFiHotspotSecurity\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"wpa2_personal\"\n        }\n    },\n    \"wiFiHotspotPassword\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": \"ZW3vARNUBe\"\n        }\n    },\n    \"authenticationState\": {\n        \"timestamp\": \"2021-12-13T11:47:24.392Z\",\n        \"data\": {\n            \"value\": \"authenticated\"\n        }\n    },\n    \"chargeCurrent\": {\n        \"timestamp\": \"2021-12-13T11:40:23.747Z\",\n        \"data\": {\n            \"value\": 0.5,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"maximumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"minimumChargeCurrent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.021Z\",\n        \"data\": {\n            \"value\": 0.1,\n            \"unit\": \"amperes\"\n        }\n    },\n    \"coordinates\": {\n        \"timestamp\": \"2021-03-02T10:30:40.022Z\",\n        \"data\": {\n            \"latitude\": {\n                \"value\": 52.520008\n            },\n            \"longitude\": {\n                \"value\": 13.404954\n            }\n        }\n    },\n    \"priceTariffs\": [\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.275Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"starting_fee\"\n                },\n                \"price\": {\n                    \"value\": 4.5\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.288Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_minute\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"EUR\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T11:43:45.302Z\",\n            \"data\": {\n                \"pricingType\": {\n                    \"value\": \"per_kwh\"\n                },\n                \"price\": {\n                    \"value\": 0.3\n                },\n                \"currency\": {\n                    \"value\": \"Ripple\"\n                }\n            }\n        }\n    ],\n    \"chargingPower\": {\n        \"timestamp\": \"2021-03-02T10:30:40.023Z\",\n        \"data\": {\n            \"value\": 350,\n            \"unit\": \"kilowatts\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 401",
 							"originalRequest": {
 								"method": "PUT",
@@ -6746,22 +6748,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -6825,38 +6811,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
-						},
-						{
-							"name": "Home Charger State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"authenticationState\": \"authenticated\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/home_charger/authenticate_expire",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"home_charger",
-										"authenticate_expire"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"chargingStatus\": \"charging\",\n \"authenticationMechanism\": \"app\",\n \"plugType\": \"type_2\",\n \"chargingPowerKW\": 11.5,\n \"solarCharging\": \"active\",\n \"wifiHotspotEnabled\": \"enabled\",\n \"wifiHotspotSSID\": \"Charger 7612\",\n \"wiFiHotspotSecurity\": \"wpa2_personal\",\n \"wiFiHotspotPassword\": \"ZW3vARNUBe\",\n \"authenticationState\": \"authenticated\",\n \"chargeCurrentDC\": 0.5,\n \"maximumChargeCurrent\": 1,\n \"minimumChargeCurrent\": \"<float>\",\n \"coordinates\": {\n  \"latitude\": 52.520008,\n  \"longitude\": 13.404954\n },\n \"priceTariffs\": [\n  {\n   \"pricing_type\": \"starting_fee\",\n   \"price\": 4.5,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_minute\",\n   \"price\": 0.3,\n   \"currency\": \"EUR\"\n  },\n  {\n   \"pricing_type\": \"per_kwh\",\n   \"price\": 0.3,\n   \"currency\": \"Ripple\"\n  }\n ]\n}"
 						},
 						{
 							"name": "Error 403",
