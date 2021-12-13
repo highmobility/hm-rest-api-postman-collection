@@ -12547,6 +12547,38 @@
 					},
 					"response": [
 						{
+							"name": "Valet Mode State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/valet_mode",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"valet_mode"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-03T16:22:40.053Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "GET",
@@ -12578,22 +12610,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -12674,33 +12690,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
-						},
-						{
-							"name": "Valet Mode State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/valet_mode",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"valet_mode"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"active\"\n}"
 						}
 					]
 				},
@@ -12738,7 +12727,7 @@
 					},
 					"response": [
 						{
-							"name": "Error 404",
+							"name": "Valet Mode State",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
@@ -12747,17 +12736,42 @@
 										"value": "Bearer {{JWT}}"
 									},
 									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"active\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/valet_mode/activate_deactivate_valet_mode",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"valet_mode",
+										"activate_deactivate_valet_mode"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"timestamp\": \"2021-12-13T12:39:14.846Z\",\n        \"data\": {\n            \"value\": \"active\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error 404",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -12821,38 +12835,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
-						},
-						{
-							"name": "Valet Mode State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"status\": \"active\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/valet_mode/activate_deactivate_valet_mode",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"valet_mode",
-										"activate_deactivate_valet_mode"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"status\": \"active\"\n}"
 						},
 						{
 							"name": "Error 400",
