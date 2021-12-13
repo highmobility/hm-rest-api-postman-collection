@@ -11392,6 +11392,38 @@
 					},
 					"response": [
 						{
+							"name": "Rooftop Control State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/rooftop_control",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"rooftop_control"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"dimming\": {\n        \"timestamp\": \"2021-12-03T16:22:27.456Z\",\n        \"data\": {\n            \"value\": 1\n        }\n    },\n    \"position\": {\n        \"timestamp\": \"2021-12-03T16:22:27.467Z\",\n        \"data\": {\n            \"value\": 0.5\n        }\n    },\n    \"convertibleRoofState\": {\n        \"timestamp\": \"2021-12-03T16:22:27.474Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"sunroofTiltState\": {\n        \"timestamp\": \"2021-12-03T16:22:27.483Z\",\n        \"data\": {\n            \"value\": \"half_tilted\"\n        }\n    },\n    \"sunroofState\": {\n        \"timestamp\": \"2021-12-03T16:22:27.489Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"sunroofRainEvent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.031Z\",\n        \"data\": {\n            \"value\": \"no_event\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 401",
 							"originalRequest": {
 								"method": "GET",
@@ -11417,33 +11449,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 401,\n \"failureType\": \"auth_header_missing\",\n \"failureDescription\": \"Missing authentication header\"\n}"
-						},
-						{
-							"name": "Rooftop Control State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/rooftop_control",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"rooftop_control"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"dimming\": 1,\n \"position\": 0.5,\n \"convertibleRoofState\": \"open\",\n \"sunroofTiltState\": \"half_tilted\",\n \"sunroofState\": \"open\"\n}"
 						},
 						{
 							"name": "Error 403",
@@ -11504,22 +11509,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -11586,7 +11575,16 @@
 							"name": "Rooftop Control State",
 							"originalRequest": {
 								"method": "PUT",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "{\n    \"dimming\": 1,\n    \"position\": 0.5,\n    \"convertibleRoofState\": \"open\",\n    \"sunroofTiltState\": \"half_tilted\",\n    \"sunroofState\": \"open\"\n}"
@@ -11607,12 +11605,12 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
-									"key": "Content-Type",
-									"value": "application/json"
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"dimming\": 1,\n \"position\": 0.5,\n \"convertibleRoofState\": \"open\",\n \"sunroofTiltState\": \"half_tilted\",\n \"sunroofState\": \"open\"\n}"
+							"body": "{\n    \"dimming\": {\n        \"timestamp\": \"2021-12-13T12:30:25.098Z\",\n        \"data\": {\n            \"value\": 1\n        }\n    },\n    \"position\": {\n        \"timestamp\": \"2021-12-13T12:30:25.107Z\",\n        \"data\": {\n            \"value\": 0.5\n        }\n    },\n    \"convertibleRoofState\": {\n        \"timestamp\": \"2021-12-13T12:30:25.112Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"sunroofTiltState\": {\n        \"timestamp\": \"2021-12-13T12:30:25.118Z\",\n        \"data\": {\n            \"value\": \"half_tilted\"\n        }\n    },\n    \"sunroofState\": {\n        \"timestamp\": \"2021-12-13T12:30:25.123Z\",\n        \"data\": {\n            \"value\": \"open\"\n        }\n    },\n    \"sunroofRainEvent\": {\n        \"timestamp\": \"2021-03-02T10:30:40.031Z\",\n        \"data\": {\n            \"value\": \"no_event\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 401",
@@ -11715,22 +11713,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
