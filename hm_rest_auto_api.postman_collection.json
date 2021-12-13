@@ -13735,6 +13735,38 @@
 					},
 					"response": [
 						{
+							"name": "Windows State",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/windows",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"windows"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"openPercentages\": [\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.520Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.2\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.531Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.5\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.542Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.5\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.553Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.1\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.564Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"hatch\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.18\n                }\n            }\n        }\n    ],\n    \"positions\": [\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.574Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.584Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.597Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"position\": {\n                    \"value\": \"closed\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.609Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-07-19T14:18:31.618Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"hatch\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        }\n    ]\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "GET",
@@ -13766,22 +13798,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -13862,33 +13878,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 400,\n \"failureType\": \"unsupported_capability\",\n \"failureDescription\": \"Capability not supported by this vehicle\"\n}"
-						},
-						{
-							"name": "Windows State",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{BASE_URL}}/windows",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"windows"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"openPercentages\": [\n  {\n   \"location\": \"front_left\",\n   \"open_percentage\": 0.2\n  },\n  {\n   \"location\": \"front_right\",\n   \"open_percentage\": 0.5\n  },\n  {\n   \"location\": \"rear_right\",\n   \"open_percentage\": 0.5\n  },\n  {\n   \"location\": \"rear_left\",\n   \"open_percentage\": 0.1\n  },\n  {\n   \"location\": \"hatch\",\n   \"open_percentage\": 0.18\n  }\n ],\n \"positions\": [\n  {\n   \"location\": \"front_left\",\n   \"position\": \"open\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"position\": \"open\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"position\": \"closed\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"position\": \"open\"\n  },\n  {\n   \"location\": \"hatch\",\n   \"position\": \"open\"\n  }\n ]\n}"
 						}
 					]
 				},
@@ -13926,6 +13915,47 @@
 					},
 					"response": [
 						{
+							"name": "Windows State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"openPercentages\": [\n        {\n            \"location\": \"front_left\",\n            \"openPercentage\": 0.2\n        },\n        {\n            \"location\": \"front_right\",\n            \"openPercentage\": 0.5\n        },\n        {\n            \"location\": \"rear_right\",\n            \"openPercentage\": 0.5\n        },\n        {\n            \"location\": \"rear_left\",\n            \"openPercentage\": 0.1\n        },\n        {\n            \"location\": \"hatch\",\n            \"openPercentage\": 0.18\n        }\n    ],\n    \"positions\": [\n        {\n            \"location\": \"front_left\",\n            \"position\": \"open\"\n        },\n        {\n            \"location\": \"front_right\",\n            \"position\": \"open\"\n        },\n        {\n            \"location\": \"rear_right\",\n            \"position\": \"closed\"\n        },\n        {\n            \"location\": \"rear_left\",\n            \"position\": \"open\"\n        },\n        {\n            \"location\": \"hatch\",\n            \"position\": \"open\"\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/windows/control_windows",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"windows",
+										"control_windows"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"openPercentages\": [\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.027Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.2\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.036Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.5\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.045Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.5\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.052Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.1\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.058Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"hatch\"\n                },\n                \"openPercentage\": {\n                    \"value\": 0.18\n                }\n            }\n        }\n    ],\n    \"positions\": [\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.064Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_left\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.070Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"front_right\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.075Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_right\"\n                },\n                \"position\": {\n                    \"value\": \"closed\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.081Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"rear_left\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        },\n        {\n            \"timestamp\": \"2021-12-13T12:46:47.087Z\",\n            \"data\": {\n                \"location\": {\n                    \"value\": \"hatch\"\n                },\n                \"position\": {\n                    \"value\": \"open\"\n                }\n            }\n        }\n    ]\n}"
+						},
+						{
 							"name": "Error 403",
 							"originalRequest": {
 								"method": "PUT",
@@ -13956,38 +13986,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
-						},
-						{
-							"name": "Windows State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"openPercentages\": [\n        {\n            \"location\": \"front_left\",\n            \"open_percentage\": 0.2\n        },\n        {\n            \"location\": \"front_right\",\n            \"open_percentage\": 0.5\n        },\n        {\n            \"location\": \"rear_right\",\n            \"open_percentage\": 0.5\n        },\n        {\n            \"location\": \"rear_left\",\n            \"open_percentage\": 0.1\n        },\n        {\n            \"location\": \"hatch\",\n            \"open_percentage\": 0.18\n        }\n    ],\n    \"positions\": [\n        {\n            \"location\": \"front_left\",\n            \"position\": \"open\"\n        },\n        {\n            \"location\": \"front_right\",\n            \"position\": \"open\"\n        },\n        {\n            \"location\": \"rear_right\",\n            \"position\": \"closed\"\n        },\n        {\n            \"location\": \"rear_left\",\n            \"position\": \"open\"\n        },\n        {\n            \"location\": \"hatch\",\n            \"position\": \"open\"\n        }\n    ]\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/windows/control_windows",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"windows",
-										"control_windows"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"openPercentages\": [\n  {\n   \"location\": \"front_left\",\n   \"open_percentage\": 0.2\n  },\n  {\n   \"location\": \"front_right\",\n   \"open_percentage\": 0.5\n  },\n  {\n   \"location\": \"rear_right\",\n   \"open_percentage\": 0.5\n  },\n  {\n   \"location\": \"rear_left\",\n   \"open_percentage\": 0.1\n  },\n  {\n   \"location\": \"hatch\",\n   \"open_percentage\": 0.18\n  }\n ],\n \"positions\": [\n  {\n   \"location\": \"front_left\",\n   \"position\": \"open\"\n  },\n  {\n   \"location\": \"front_right\",\n   \"position\": \"open\"\n  },\n  {\n   \"location\": \"rear_right\",\n   \"position\": \"closed\"\n  },\n  {\n   \"location\": \"rear_left\",\n   \"position\": \"open\"\n  },\n  {\n   \"location\": \"hatch\",\n   \"position\": \"open\"\n  }\n ]\n}"
 						},
 						{
 							"name": "Error 400",
@@ -14026,22 +14024,6 @@
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
