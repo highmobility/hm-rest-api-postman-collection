@@ -5273,7 +5273,12 @@
 							"name": "Fueling State",
 							"originalRequest": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									}
+								],
 								"url": {
 									"raw": "{{BASE_URL}}/fueling",
 									"host": [
@@ -5294,7 +5299,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n \"gasFlapLock\": \"locked\",\n \"gasFlapPosition\": \"closed\"\n}"
+							"body": "{\n    \"gasFlapLock\": {\n        \"timestamp\": \"2021-12-03T16:22:45.734Z\",\n        \"data\": {\n            \"value\": \"locked\"\n        }\n    },\n    \"gasFlapPosition\": {\n        \"timestamp\": \"2021-12-03T16:22:45.746Z\",\n        \"data\": {\n            \"value\": \"closed\"\n        }\n    }\n}"
 						},
 						{
 							"name": "Error 400",
@@ -5382,22 +5387,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
@@ -5461,6 +5450,47 @@
 					},
 					"response": [
 						{
+							"name": "Fueling State",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{JWT}}"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"gasFlapLock\": \"locked\",\n    \"gasFlapPosition\": \"closed\"\n}"
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/fueling/control_gas_flap",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"fueling",
+										"control_gas_flap"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"gasFlapLock\": {\n        \"timestamp\": \"2021-12-13T11:23:17.283Z\",\n        \"data\": {\n            \"value\": \"locked\"\n        }\n    },\n    \"gasFlapPosition\": {\n        \"timestamp\": \"2021-12-13T11:23:17.293Z\",\n        \"data\": {\n            \"value\": \"closed\"\n        }\n    }\n}"
+						},
+						{
 							"name": "Error 400",
 							"originalRequest": {
 								"method": "PUT",
@@ -5532,22 +5562,6 @@
 									{
 										"key": "Authorization",
 										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
-									},
-									{
-										"key": "Authorization",
-										"value": "Bearer {{JWT}}"
 									}
 								],
 								"body": {
@@ -5608,38 +5622,6 @@
 							],
 							"cookie": [],
 							"body": "{\n \"errorCode\": 403,\n \"failureType\": \"auth_header_invalid\",\n \"failureDescription\": \"Invalid authentication header\"\n}"
-						},
-						{
-							"name": "Fueling State",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"gasFlapLock\": \"locked\",\n    \"gasFlapPosition\": \"closed\"\n}"
-								},
-								"url": {
-									"raw": "{{BASE_URL}}/fueling/control_gas_flap",
-									"host": [
-										"{{BASE_URL}}"
-									],
-									"path": [
-										"fueling",
-										"control_gas_flap"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"gasFlapLock\": \"locked\",\n \"gasFlapPosition\": \"closed\"\n}"
 						}
 					]
 				}
