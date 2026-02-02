@@ -1,4 +1,4 @@
-> This repo is archived, get the latest versions from postman workspace https://www.postman.com/red-star-991947/workspace/high-mobility-public-api-workspace/overview
+> This repo is archived, get the latest versions from postman workspace [https://www.postman.com/high-mobility](https://www.postman.com/high-mobility/high-mobility-public-api-workspace/overview)
 
 # hm-rest-api-postman-collection
 HM REST API Postman Collection and reference Environment
